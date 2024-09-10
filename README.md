@@ -34,7 +34,7 @@ You should reboot shell session at this point.
 
 conda create --name pdal-env python=3.8.13
 conda activate pdal-env
-~~conda install -c conda-forge pdal python-pdal~~
+~~ conda install -c conda-forge pdal python-pdal ~~
 
 
 ```
@@ -50,10 +50,11 @@ You have to install requirements for the repo.
  ```
  pip install -r requirements.txt
  ```
+
 Original repo installs pdal together with python-pdal but this resulted in errors for me
-'''
+```
 conda install -c conda-forge python-pdal
-'''
+```
 # Running the pipeline with the NIBIO code
 
 Once you clone the repo you should export the path (you should be in FSCT folder).
