@@ -3,7 +3,7 @@
 ############################ parameters #################################################
 # General parameters
 CLEAR_INPUT_FOLDER=0  # 1: clear input folder, 0: not clear input folder
-CONDA_ENV="pdal-env-exp" # conda environment for running the pipeline
+CONDA_ENV="pdal-env" # conda environment for running the pipeline
 
 # Parameters for the semetnic segmentation
 data_folder="/home/nibio/mutable-outside-world/" # path to the folder containing the data

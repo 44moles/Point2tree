@@ -1,0 +1,2712 @@
+      The list of letters for the parameters:
+d: data_folder
+      The values of the parameters:
+data_folder: /home/nibio/mutable-outside-world/
+remove_small_tiles: 0
+checkpoint_model_path: ./fsct/model/model.pth
+batch_size: 4
+tile_size: 10
+min_density: 75
+PYTHONPATH is not set. Setting it to the current directory
+1 las files found in the input folder good to go with!
+Searching for files in the input folder...
+Processing file /home/nibio/mutable-outside-world/1.las
+Searching for files in the input folder...
+Tiling and tile index generation
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//000.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/000.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/000.las
+Subsampling...
+Original number of points: 3624035
+Slice size: 62113     Slice number: 1 / 32
+Slice size: 127250     Slice number: 2 / 32
+Slice size: 140596     Slice number: 3 / 32
+Slice size: 146846     Slice number: 4 / 32
+Slice size: 162974     Slice number: 5 / 32
+Slice size: 262625     Slice number: 6 / 32
+Slice size: 259738     Slice number: 7 / 32
+Slice size: 173170     Slice number: 8 / 32
+Slice size: 192384     Slice number: 9 / 32
+Slice size: 221360     Slice number: 10 / 32
+Slice size: 214932     Slice number: 11 / 32
+Slice size: 193430     Slice number: 12 / 32
+Slice size: 202392     Slice number: 13 / 32
+Slice size: 235384     Slice number: 14 / 32
+Slice size: 238484     Slice number: 15 / 32
+Slice size: 213179     Slice number: 16 / 32
+Slice size: 199448     Slice number: 17 / 32
+Slice size: 214145     Slice number: 18 / 32
+Slice size: 316362     Slice number: 19 / 32
+Slice size: 280144     Slice number: 20 / 32
+Slice size: 152765     Slice number: 21 / 32
+Slice size: 161754     Slice number: 22 / 32
+Slice size: 199213     Slice number: 23 / 32
+Slice size: 217801     Slice number: 24 / 32
+Slice size: 229017     Slice number: 25 / 32
+Slice size: 226604     Slice number: 26 / 32
+Slice size: 219028     Slice number: 27 / 32
+Slice size: 232547     Slice number: 28 / 32
+Slice size: 243571     Slice number: 29 / 32
+Slice size: 292991     Slice number: 30 / 32
+Slice size: 429623     Slice number: 31 / 32
+Slice size: 417954     Slice number: 32 / 32
+Subsampled number of points: 4169031
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/000_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 43.373167514801025 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/189
+4/189
+8/189
+12/189
+16/189
+20/189
+24/189
+28/189
+32/189
+36/189
+40/189
+44/189
+48/189
+52/189
+56/189
+60/189
+64/189
+68/189
+72/189
+76/189
+80/189
+84/189
+88/189
+92/189
+96/189
+100/189
+104/189
+108/189
+112/189
+116/189
+120/189
+124/189
+128/189
+132/189
+136/189
+140/189
+144/189
+148/189
+152/189
+156/189
+160/189
+164/189
+168/189
+172/189
+176/189
+180/189
+184/189
+188/189
+189/189
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/000_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/000_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 51.33453917503357 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/000_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/000_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.010325 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/000_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/000_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/000_FSCT_output/vegetation_points.las
+Saved.
+/home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/000_FSCT_output/cwd_points.las is empty...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/000_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 6.9895007610321045 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//001.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/001.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/001.las
+Subsampling...
+Original number of points: 5258546
+Slice size: 173711     Slice number: 1 / 32
+Slice size: 353945     Slice number: 2 / 32
+Slice size: 395911     Slice number: 3 / 32
+Slice size: 630648     Slice number: 4 / 32
+Slice size: 677801     Slice number: 5 / 32
+Slice size: 444147     Slice number: 6 / 32
+Slice size: 370736     Slice number: 7 / 32
+Slice size: 368889     Slice number: 8 / 32
+Slice size: 358820     Slice number: 9 / 32
+Slice size: 411237     Slice number: 10 / 32
+Slice size: 411194     Slice number: 11 / 32
+Slice size: 388268     Slice number: 12 / 32
+Slice size: 364057     Slice number: 13 / 32
+Slice size: 289407     Slice number: 14 / 32
+Slice size: 270563     Slice number: 15 / 32
+Slice size: 247775     Slice number: 16 / 32
+Slice size: 228344     Slice number: 17 / 32
+Slice size: 240641     Slice number: 18 / 32
+Slice size: 299040     Slice number: 19 / 32
+Slice size: 399805     Slice number: 20 / 32
+Slice size: 384661     Slice number: 21 / 32
+Slice size: 289399     Slice number: 22 / 32
+Slice size: 259514     Slice number: 23 / 32
+Slice size: 241884     Slice number: 24 / 32
+Slice size: 207471     Slice number: 25 / 32
+Slice size: 191113     Slice number: 26 / 32
+Slice size: 262769     Slice number: 27 / 32
+Slice size: 385820     Slice number: 28 / 32
+Slice size: 343712     Slice number: 29 / 32
+Slice size: 211148     Slice number: 30 / 32
+Slice size: 163292     Slice number: 31 / 32
+Slice size: 161613     Slice number: 32 / 32
+Subsampled number of points: 4152581
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/001_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 122.3304054737091 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/205
+4/205
+8/205
+12/205
+16/205
+20/205
+24/205
+28/205
+32/205
+36/205
+40/205
+44/205
+48/205
+52/205
+56/205
+60/205
+64/205
+68/205
+72/205
+76/205
+80/205
+84/205
+88/205
+92/205
+96/205
+100/205
+104/205
+108/205
+112/205
+116/205
+120/205
+124/205
+128/205
+132/205
+136/205
+140/205
+144/205
+148/205
+152/205
+156/205
+160/205
+164/205
+168/205
+172/205
+176/205
+180/205
+184/205
+188/205
+192/205
+196/205
+200/205
+204/205
+205/205
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/001_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/001_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 53.33552646636963 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/001_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/001_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.010462500000000001 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/001_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/001_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/001_FSCT_output/vegetation_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/001_FSCT_output/cwd_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/001_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 7.170783042907715 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//002.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/002.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/002.las
+Subsampling...
+Original number of points: 2201331
+Slice size: 33257     Slice number: 1 / 32
+Slice size: 71205     Slice number: 2 / 32
+Slice size: 80235     Slice number: 3 / 32
+Slice size: 82226     Slice number: 4 / 32
+Slice size: 81617     Slice number: 5 / 32
+Slice size: 79049     Slice number: 6 / 32
+Slice size: 75067     Slice number: 7 / 32
+Slice size: 79925     Slice number: 8 / 32
+Slice size: 85982     Slice number: 9 / 32
+Slice size: 81485     Slice number: 10 / 32
+Slice size: 74682     Slice number: 11 / 32
+Slice size: 70993     Slice number: 12 / 32
+Slice size: 72857     Slice number: 13 / 32
+Slice size: 77048     Slice number: 14 / 32
+Slice size: 77777     Slice number: 15 / 32
+Slice size: 73771     Slice number: 16 / 32
+Slice size: 73658     Slice number: 17 / 32
+Slice size: 92085     Slice number: 18 / 32
+Slice size: 107682     Slice number: 19 / 32
+Slice size: 106932     Slice number: 20 / 32
+Slice size: 108536     Slice number: 21 / 32
+Slice size: 122908     Slice number: 22 / 32
+Slice size: 162175     Slice number: 23 / 32
+Slice size: 285055     Slice number: 24 / 32
+Slice size: 378558     Slice number: 25 / 32
+Slice size: 306383     Slice number: 26 / 32
+Slice size: 197225     Slice number: 27 / 32
+Slice size: 166483     Slice number: 28 / 32
+Slice size: 186177     Slice number: 29 / 32
+Slice size: 199227     Slice number: 30 / 32
+Slice size: 205440     Slice number: 31 / 32
+Slice size: 297794     Slice number: 32 / 32
+Subsampled number of points: 2440325
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/002_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 33.31161975860596 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/200
+4/200
+8/200
+12/200
+16/200
+20/200
+24/200
+28/200
+32/200
+36/200
+40/200
+44/200
+48/200
+52/200
+56/200
+60/200
+64/200
+68/200
+72/200
+76/200
+80/200
+84/200
+88/200
+92/200
+96/200
+100/200
+104/200
+108/200
+112/200
+116/200
+120/200
+124/200
+128/200
+132/200
+136/200
+140/200
+144/200
+148/200
+152/200
+156/200
+160/200
+164/200
+168/200
+172/200
+176/200
+180/200
+184/200
+188/200
+192/200
+196/200
+200/200
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/002_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/002_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 43.58276033401489 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/002_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/002_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.009887499999999999 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/002_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/002_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/002_FSCT_output/vegetation_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/002_FSCT_output/cwd_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/002_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 4.230232000350952 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//003.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/003.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/003.las
+Subsampling...
+Original number of points: 4964084
+Slice size: 227570     Slice number: 1 / 32
+Slice size: 320984     Slice number: 2 / 32
+Slice size: 207451     Slice number: 3 / 32
+Slice size: 224434     Slice number: 4 / 32
+Slice size: 227974     Slice number: 5 / 32
+Slice size: 213820     Slice number: 6 / 32
+Slice size: 205715     Slice number: 7 / 32
+Slice size: 211033     Slice number: 8 / 32
+Slice size: 229504     Slice number: 9 / 32
+Slice size: 308740     Slice number: 10 / 32
+Slice size: 432994     Slice number: 11 / 32
+Slice size: 382076     Slice number: 12 / 32
+Slice size: 232985     Slice number: 13 / 32
+Slice size: 183558     Slice number: 14 / 32
+Slice size: 176383     Slice number: 15 / 32
+Slice size: 190896     Slice number: 16 / 32
+Slice size: 229732     Slice number: 17 / 32
+Slice size: 357804     Slice number: 18 / 32
+Slice size: 550606     Slice number: 19 / 32
+Slice size: 538445     Slice number: 20 / 32
+Slice size: 359364     Slice number: 21 / 32
+Slice size: 279700     Slice number: 22 / 32
+Slice size: 269919     Slice number: 23 / 32
+Slice size: 285818     Slice number: 24 / 32
+Slice size: 308996     Slice number: 25 / 32
+Slice size: 327961     Slice number: 26 / 32
+Slice size: 414164     Slice number: 27 / 32
+Slice size: 447486     Slice number: 28 / 32
+Slice size: 374510     Slice number: 29 / 32
+Slice size: 334556     Slice number: 30 / 32
+Slice size: 336635     Slice number: 31 / 32
+Slice size: 346949     Slice number: 32 / 32
+Subsampled number of points: 3644308
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/003_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 112.61686134338379 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/207
+4/207
+8/207
+12/207
+16/207
+20/207
+24/207
+28/207
+32/207
+36/207
+40/207
+44/207
+48/207
+52/207
+56/207
+60/207
+64/207
+68/207
+72/207
+76/207
+80/207
+84/207
+88/207
+92/207
+96/207
+100/207
+104/207
+108/207
+112/207
+116/207
+120/207
+124/207
+128/207
+132/207
+136/207
+140/207
+144/207
+148/207
+152/207
+156/207
+160/207
+164/207
+168/207
+172/207
+176/207
+180/207
+184/207
+188/207
+192/207
+196/207
+200/207
+204/207
+207/207
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/003_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/003_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 53.142980337142944 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/003_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/003_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.01 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/003_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/003_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/003_FSCT_output/vegetation_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/003_FSCT_output/cwd_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/003_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 5.7147111892700195 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//004.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/004.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/004.las
+Subsampling...
+Original number of points: 2040024
+Slice size: 1507     Slice number: 1 / 32
+Slice size: 6097     Slice number: 2 / 32
+Slice size: 16993     Slice number: 3 / 32
+Slice size: 22028     Slice number: 4 / 32
+Slice size: 20966     Slice number: 5 / 32
+Slice size: 26093     Slice number: 6 / 32
+Slice size: 37554     Slice number: 7 / 32
+Slice size: 88211     Slice number: 8 / 32
+Slice size: 125196     Slice number: 9 / 32
+Slice size: 84357     Slice number: 10 / 32
+Slice size: 48471     Slice number: 11 / 32
+Slice size: 59735     Slice number: 12 / 32
+Slice size: 95713     Slice number: 13 / 32
+Slice size: 125626     Slice number: 14 / 32
+Slice size: 124192     Slice number: 15 / 32
+Slice size: 129124     Slice number: 16 / 32
+Slice size: 172964     Slice number: 17 / 32
+Slice size: 286057     Slice number: 18 / 32
+Slice size: 364789     Slice number: 19 / 32
+Slice size: 254128     Slice number: 20 / 32
+Slice size: 144753     Slice number: 21 / 32
+Slice size: 148825     Slice number: 22 / 32
+Slice size: 187964     Slice number: 23 / 32
+Slice size: 215260     Slice number: 24 / 32
+Slice size: 196256     Slice number: 25 / 32
+Slice size: 164446     Slice number: 26 / 32
+Slice size: 140544     Slice number: 27 / 32
+Slice size: 133191     Slice number: 28 / 32
+Slice size: 136434     Slice number: 29 / 32
+Slice size: 140077     Slice number: 30 / 32
+Slice size: 144150     Slice number: 31 / 32
+Slice size: 153699     Slice number: 32 / 32
+Subsampled number of points: 1772084
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/004_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 27.508928060531616 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/131
+4/131
+8/131
+12/131
+16/131
+20/131
+24/131
+28/131
+32/131
+36/131
+40/131
+44/131
+48/131
+52/131
+56/131
+60/131
+64/131
+68/131
+72/131
+76/131
+80/131
+84/131
+88/131
+92/131
+96/131
+100/131
+104/131
+108/131
+112/131
+116/131
+120/131
+124/131
+128/131
+131/131
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/004_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/004_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 29.12652063369751 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/004_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/004_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0054375 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/004_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/004_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/004_FSCT_output/vegetation_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/004_FSCT_output/cwd_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/004_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 4.106877088546753 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//005.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/005.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/005.las
+Subsampling...
+Original number of points: 85159
+Slice size: 4961     Slice number: 1 / 32
+Slice size: 8529     Slice number: 2 / 32
+Slice size: 6712     Slice number: 3 / 32
+Slice size: 6060     Slice number: 4 / 32
+Slice size: 5910     Slice number: 5 / 32
+Slice size: 6094     Slice number: 6 / 32
+Slice size: 6013     Slice number: 7 / 32
+Slice size: 6868     Slice number: 8 / 32
+Slice size: 7086     Slice number: 9 / 32
+Slice size: 7412     Slice number: 10 / 32
+Slice size: 6772     Slice number: 11 / 32
+Slice size: 6689     Slice number: 12 / 32
+Slice size: 6379     Slice number: 13 / 32
+Slice size: 6187     Slice number: 14 / 32
+Slice size: 5706     Slice number: 15 / 32
+Slice size: 6188     Slice number: 16 / 32
+Slice size: 5894     Slice number: 17 / 32
+Slice size: 5689     Slice number: 18 / 32
+Slice size: 5038     Slice number: 19 / 32
+Slice size: 5109     Slice number: 20 / 32
+Slice size: 5055     Slice number: 21 / 32
+Slice size: 4998     Slice number: 22 / 32
+Slice size: 4705     Slice number: 23 / 32
+Slice size: 5107     Slice number: 24 / 32
+Slice size: 4828     Slice number: 25 / 32
+Slice size: 4408     Slice number: 26 / 32
+Slice size: 3373     Slice number: 27 / 32
+Slice size: 3212     Slice number: 28 / 32
+Slice size: 3204     Slice number: 29 / 32
+Slice size: 3081     Slice number: 30 / 32
+Slice size: 2713     Slice number: 31 / 32
+Slice size: 2041     Slice number: 32 / 32
+Subsampled number of points: 34478
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/005_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 4.133485794067383 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/40
+4/40
+8/40
+12/40
+16/40
+20/40
+24/40
+28/40
+32/40
+36/40
+40/40
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/005_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/005_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 6.2262351512908936 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/005_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/005_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0007624999999999997 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/005_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/005_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/005_FSCT_output/vegetation_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/005_FSCT_output/cwd_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/005_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 0.13100862503051758 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//006.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/006.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/006.las
+Subsampling...
+Original number of points: 108347
+Slice size: 4934     Slice number: 1 / 32
+Slice size: 9701     Slice number: 2 / 32
+Slice size: 9684     Slice number: 3 / 32
+Slice size: 8848     Slice number: 4 / 32
+Slice size: 8270     Slice number: 5 / 32
+Slice size: 8642     Slice number: 6 / 32
+Slice size: 9351     Slice number: 7 / 32
+Slice size: 11139     Slice number: 8 / 32
+Slice size: 12961     Slice number: 9 / 32
+Slice size: 15871     Slice number: 10 / 32
+Slice size: 18104     Slice number: 11 / 32
+Slice size: 14276     Slice number: 12 / 32
+Slice size: 9852     Slice number: 13 / 32
+Slice size: 9314     Slice number: 14 / 32
+Slice size: 9191     Slice number: 15 / 32
+Slice size: 9687     Slice number: 16 / 32
+Slice size: 10636     Slice number: 17 / 32
+Slice size: 8739     Slice number: 18 / 32
+Slice size: 5305     Slice number: 19 / 32
+Slice size: 3797     Slice number: 20 / 32
+Slice size: 3085     Slice number: 21 / 32
+Slice size: 2401     Slice number: 22 / 32
+Slice size: 2072     Slice number: 23 / 32
+Slice size: 2059     Slice number: 24 / 32
+Slice size: 2016     Slice number: 25 / 32
+Slice size: 2025     Slice number: 26 / 32
+Slice size: 1605     Slice number: 27 / 32
+Slice size: 1049     Slice number: 28 / 32
+Slice size: 882     Slice number: 29 / 32
+Slice size: 592     Slice number: 30 / 32
+Slice size: 368     Slice number: 31 / 32
+Slice size: 207     Slice number: 32 / 32
+Subsampled number of points: 116648
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/006_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 4.840467691421509 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/52
+4/52
+8/52
+12/52
+16/52
+20/52
+24/52
+28/52
+32/52
+36/52
+40/52
+44/52
+48/52
+52/52
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/006_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/006_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 9.03359842300415 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/006_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/006_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0008499999999999998 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/006_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/006_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/006_FSCT_output/vegetation_points.las
+Saved.
+/home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/006_FSCT_output/cwd_points.las is empty...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/006_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 0.25189709663391113 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//007.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/007.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/007.las
+Subsampling...
+Original number of points: 3576313
+Slice size: 97579     Slice number: 1 / 32
+Slice size: 216133     Slice number: 2 / 32
+Slice size: 235058     Slice number: 3 / 32
+Slice size: 223909     Slice number: 4 / 32
+Slice size: 260485     Slice number: 5 / 32
+Slice size: 358958     Slice number: 6 / 32
+Slice size: 397806     Slice number: 7 / 32
+Slice size: 311194     Slice number: 8 / 32
+Slice size: 298221     Slice number: 9 / 32
+Slice size: 304774     Slice number: 10 / 32
+Slice size: 245399     Slice number: 11 / 32
+Slice size: 221980     Slice number: 12 / 32
+Slice size: 212739     Slice number: 13 / 32
+Slice size: 226174     Slice number: 14 / 32
+Slice size: 322294     Slice number: 15 / 32
+Slice size: 392244     Slice number: 16 / 32
+Slice size: 295486     Slice number: 17 / 32
+Slice size: 202870     Slice number: 18 / 32
+Slice size: 195514     Slice number: 19 / 32
+Slice size: 188306     Slice number: 20 / 32
+Slice size: 172341     Slice number: 21 / 32
+Slice size: 160514     Slice number: 22 / 32
+Slice size: 158403     Slice number: 23 / 32
+Slice size: 259325     Slice number: 24 / 32
+Slice size: 330191     Slice number: 25 / 32
+Slice size: 227434     Slice number: 26 / 32
+Slice size: 127511     Slice number: 27 / 32
+Slice size: 104833     Slice number: 28 / 32
+Slice size: 95757     Slice number: 29 / 32
+Slice size: 86697     Slice number: 30 / 32
+Slice size: 89736     Slice number: 31 / 32
+Slice size: 87000     Slice number: 32 / 32
+Subsampled number of points: 2352821
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/007_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 70.32539463043213 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/190
+4/190
+8/190
+12/190
+16/190
+20/190
+24/190
+28/190
+32/190
+36/190
+40/190
+44/190
+48/190
+52/190
+56/190
+60/190
+64/190
+68/190
+72/190
+76/190
+80/190
+84/190
+88/190
+92/190
+96/190
+100/190
+104/190
+108/190
+112/190
+116/190
+120/190
+124/190
+128/190
+132/190
+136/190
+140/190
+144/190
+148/190
+152/190
+156/190
+160/190
+164/190
+168/190
+172/190
+176/190
+180/190
+184/190
+188/190
+190/190
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/007_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/007_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 39.90205907821655 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/007_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/007_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.01035 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/007_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/007_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/007_FSCT_output/vegetation_points.las
+Saved.
+/home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/007_FSCT_output/cwd_points.las is empty...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/007_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 3.964364528656006 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//008.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/008.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/008.las
+Subsampling...
+Original number of points: 518268
+Slice size: 15324     Slice number: 1 / 32
+Slice size: 28717     Slice number: 2 / 32
+Slice size: 27193     Slice number: 3 / 32
+Slice size: 27648     Slice number: 4 / 32
+Slice size: 28129     Slice number: 5 / 32
+Slice size: 28724     Slice number: 6 / 32
+Slice size: 30076     Slice number: 7 / 32
+Slice size: 34052     Slice number: 8 / 32
+Slice size: 38606     Slice number: 9 / 32
+Slice size: 40971     Slice number: 10 / 32
+Slice size: 41076     Slice number: 11 / 32
+Slice size: 42921     Slice number: 12 / 32
+Slice size: 44706     Slice number: 13 / 32
+Slice size: 46451     Slice number: 14 / 32
+Slice size: 48692     Slice number: 15 / 32
+Slice size: 49272     Slice number: 16 / 32
+Slice size: 51032     Slice number: 17 / 32
+Slice size: 48052     Slice number: 18 / 32
+Slice size: 45993     Slice number: 19 / 32
+Slice size: 45673     Slice number: 20 / 32
+Slice size: 45577     Slice number: 21 / 32
+Slice size: 44235     Slice number: 22 / 32
+Slice size: 41935     Slice number: 23 / 32
+Slice size: 36942     Slice number: 24 / 32
+Slice size: 29100     Slice number: 25 / 32
+Slice size: 22131     Slice number: 26 / 32
+Slice size: 15702     Slice number: 27 / 32
+Slice size: 11777     Slice number: 28 / 32
+Slice size: 9496     Slice number: 29 / 32
+Slice size: 7184     Slice number: 30 / 32
+Slice size: 4896     Slice number: 31 / 32
+Slice size: 2525     Slice number: 32 / 32
+Subsampled number of points: 148980
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/008_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 6.80949330329895 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/64
+4/64
+8/64
+12/64
+16/64
+20/64
+24/64
+28/64
+32/64
+36/64
+40/64
+44/64
+48/64
+52/64
+56/64
+60/64
+64/64
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/008_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/008_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 32.90669512748718 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/008_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/008_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0052125 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/008_FSCT_output/terrain_points.las
+Saved.
+/home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/008_FSCT_output/stem_points.las is empty...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/008_FSCT_output/vegetation_points.las
+Saved.
+/home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/008_FSCT_output/cwd_points.las is empty...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/008_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 0.33634066581726074 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//009.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/009.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/009.las
+Subsampling...
+Original number of points: 2425954
+Slice size: 121376     Slice number: 1 / 32
+Slice size: 227987     Slice number: 2 / 32
+Slice size: 212929     Slice number: 3 / 32
+Slice size: 230262     Slice number: 4 / 32
+Slice size: 255773     Slice number: 5 / 32
+Slice size: 252950     Slice number: 6 / 32
+Slice size: 237903     Slice number: 7 / 32
+Slice size: 228677     Slice number: 8 / 32
+Slice size: 210769     Slice number: 9 / 32
+Slice size: 256539     Slice number: 10 / 32
+Slice size: 375703     Slice number: 11 / 32
+Slice size: 382391     Slice number: 12 / 32
+Slice size: 232627     Slice number: 13 / 32
+Slice size: 117299     Slice number: 14 / 32
+Slice size: 88118     Slice number: 15 / 32
+Slice size: 81948     Slice number: 16 / 32
+Slice size: 88532     Slice number: 17 / 32
+Slice size: 95717     Slice number: 18 / 32
+Slice size: 110797     Slice number: 19 / 32
+Slice size: 119528     Slice number: 20 / 32
+Slice size: 112095     Slice number: 21 / 32
+Slice size: 130752     Slice number: 22 / 32
+Slice size: 148090     Slice number: 23 / 32
+Slice size: 115683     Slice number: 24 / 32
+Slice size: 81119     Slice number: 25 / 32
+Slice size: 64444     Slice number: 26 / 32
+Slice size: 54718     Slice number: 27 / 32
+Slice size: 50449     Slice number: 28 / 32
+Slice size: 42067     Slice number: 29 / 32
+Slice size: 36001     Slice number: 30 / 32
+Slice size: 36638     Slice number: 31 / 32
+Slice size: 34818     Slice number: 32 / 32
+Subsampled number of points: 2829072
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/009_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 50.169145584106445 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/189
+4/189
+8/189
+12/189
+16/189
+20/189
+24/189
+28/189
+32/189
+36/189
+40/189
+44/189
+48/189
+52/189
+56/189
+60/189
+64/189
+68/189
+72/189
+76/189
+80/189
+84/189
+88/189
+92/189
+96/189
+100/189
+104/189
+108/189
+112/189
+116/189
+120/189
+124/189
+128/189
+132/189
+136/189
+140/189
+144/189
+148/189
+152/189
+156/189
+160/189
+164/189
+168/189
+172/189
+176/189
+180/189
+184/189
+188/189
+189/189
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/009_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/009_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 42.13176608085632 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/009_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/009_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0103625 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/009_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/009_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/009_FSCT_output/vegetation_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/009_FSCT_output/cwd_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/009_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 4.652501344680786 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//010.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/010.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/010.las
+Subsampling...
+Original number of points: 4434969
+Slice size: 56805     Slice number: 1 / 32
+Slice size: 96234     Slice number: 2 / 32
+Slice size: 69170     Slice number: 3 / 32
+Slice size: 61426     Slice number: 4 / 32
+Slice size: 70885     Slice number: 5 / 32
+Slice size: 84900     Slice number: 6 / 32
+Slice size: 101487     Slice number: 7 / 32
+Slice size: 113801     Slice number: 8 / 32
+Slice size: 125061     Slice number: 9 / 32
+Slice size: 132741     Slice number: 10 / 32
+Slice size: 139604     Slice number: 11 / 32
+Slice size: 148270     Slice number: 12 / 32
+Slice size: 164057     Slice number: 13 / 32
+Slice size: 172582     Slice number: 14 / 32
+Slice size: 180476     Slice number: 15 / 32
+Slice size: 225512     Slice number: 16 / 32
+Slice size: 281221     Slice number: 17 / 32
+Slice size: 370432     Slice number: 18 / 32
+Slice size: 419049     Slice number: 19 / 32
+Slice size: 373681     Slice number: 20 / 32
+Slice size: 315840     Slice number: 21 / 32
+Slice size: 294186     Slice number: 22 / 32
+Slice size: 313119     Slice number: 23 / 32
+Slice size: 325124     Slice number: 24 / 32
+Slice size: 273061     Slice number: 25 / 32
+Slice size: 235467     Slice number: 26 / 32
+Slice size: 303375     Slice number: 27 / 32
+Slice size: 436626     Slice number: 28 / 32
+Slice size: 658060     Slice number: 29 / 32
+Slice size: 812004     Slice number: 30 / 32
+Slice size: 698514     Slice number: 31 / 32
+Slice size: 545733     Slice number: 32 / 32
+Subsampled number of points: 4462017
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/010_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 58.78684401512146 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/197
+4/197
+8/197
+12/197
+16/197
+20/197
+24/197
+28/197
+32/197
+36/197
+40/197
+44/197
+48/197
+52/197
+56/197
+60/197
+64/197
+68/197
+72/197
+76/197
+80/197
+84/197
+88/197
+92/197
+96/197
+100/197
+104/197
+108/197
+112/197
+116/197
+120/197
+124/197
+128/197
+132/197
+136/197
+140/197
+144/197
+148/197
+152/197
+156/197
+160/197
+164/197
+168/197
+172/197
+176/197
+180/197
+184/197
+188/197
+192/197
+196/197
+197/197
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/010_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/010_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 55.24359965324402 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/010_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/010_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.010362499999999998 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/010_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/010_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/010_FSCT_output/vegetation_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/010_FSCT_output/cwd_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/010_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 7.68080997467041 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//011.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/011.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/011.las
+Subsampling...
+Original number of points: 48166
+Slice size: 504     Slice number: 1 / 32
+Slice size: 1188     Slice number: 2 / 32
+Slice size: 1475     Slice number: 3 / 32
+Slice size: 1642     Slice number: 4 / 32
+Slice size: 1642     Slice number: 5 / 32
+Slice size: 1587     Slice number: 6 / 32
+Slice size: 1650     Slice number: 7 / 32
+Slice size: 2110     Slice number: 8 / 32
+Slice size: 2381     Slice number: 9 / 32
+Slice size: 2587     Slice number: 10 / 32
+Slice size: 2294     Slice number: 11 / 32
+Slice size: 2330     Slice number: 12 / 32
+Slice size: 2376     Slice number: 13 / 32
+Slice size: 2495     Slice number: 14 / 32
+Slice size: 2658     Slice number: 15 / 32
+Slice size: 3202     Slice number: 16 / 32
+Slice size: 3207     Slice number: 17 / 32
+Slice size: 3247     Slice number: 18 / 32
+Slice size: 2886     Slice number: 19 / 32
+Slice size: 2956     Slice number: 20 / 32
+Slice size: 2986     Slice number: 21 / 32
+Slice size: 3046     Slice number: 22 / 32
+Slice size: 3186     Slice number: 23 / 32
+Slice size: 3987     Slice number: 24 / 32
+Slice size: 4182     Slice number: 25 / 32
+Slice size: 4453     Slice number: 26 / 32
+Slice size: 4078     Slice number: 27 / 32
+Slice size: 4124     Slice number: 28 / 32
+Slice size: 4162     Slice number: 29 / 32
+Slice size: 4439     Slice number: 30 / 32
+Slice size: 4832     Slice number: 31 / 32
+Slice size: 6165     Slice number: 32 / 32
+Subsampled number of points: 36564
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/011_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 4.032251596450806 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/44
+4/44
+8/44
+12/44
+16/44
+20/44
+24/44
+28/44
+32/44
+36/44
+40/44
+44/44
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/011_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/011_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 8.321861982345581 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/011_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/011_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0008499999999999998 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/011_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/011_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/011_FSCT_output/vegetation_points.las
+Saved.
+/home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/011_FSCT_output/cwd_points.las is empty...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/011_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 0.14902615547180176 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//012.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/012.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/012.las
+Subsampling...
+Original number of points: 742700
+Slice size: 44039     Slice number: 1 / 32
+Slice size: 72059     Slice number: 2 / 32
+Slice size: 54926     Slice number: 3 / 32
+Slice size: 53134     Slice number: 4 / 32
+Slice size: 57170     Slice number: 5 / 32
+Slice size: 62770     Slice number: 6 / 32
+Slice size: 65922     Slice number: 7 / 32
+Slice size: 64151     Slice number: 8 / 32
+Slice size: 57482     Slice number: 9 / 32
+Slice size: 54542     Slice number: 10 / 32
+Slice size: 53437     Slice number: 11 / 32
+Slice size: 56930     Slice number: 12 / 32
+Slice size: 57523     Slice number: 13 / 32
+Slice size: 55566     Slice number: 14 / 32
+Slice size: 56616     Slice number: 15 / 32
+Slice size: 57471     Slice number: 16 / 32
+Slice size: 58089     Slice number: 17 / 32
+Slice size: 54306     Slice number: 18 / 32
+Slice size: 53022     Slice number: 19 / 32
+Slice size: 49410     Slice number: 20 / 32
+Slice size: 44699     Slice number: 21 / 32
+Slice size: 40035     Slice number: 22 / 32
+Slice size: 35887     Slice number: 23 / 32
+Slice size: 32894     Slice number: 24 / 32
+Slice size: 29314     Slice number: 25 / 32
+Slice size: 27190     Slice number: 26 / 32
+Slice size: 27436     Slice number: 27 / 32
+Slice size: 26442     Slice number: 28 / 32
+Slice size: 24868     Slice number: 29 / 32
+Slice size: 23992     Slice number: 30 / 32
+Slice size: 19416     Slice number: 31 / 32
+Slice size: 10674     Slice number: 32 / 32
+Subsampled number of points: 522346
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/012_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 10.415947198867798 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/99
+4/99
+8/99
+12/99
+16/99
+20/99
+24/99
+28/99
+32/99
+36/99
+40/99
+44/99
+48/99
+52/99
+56/99
+60/99
+64/99
+68/99
+72/99
+76/99
+80/99
+84/99
+88/99
+92/99
+96/99
+99/99
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/012_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/012_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 18.43559956550598 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/012_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/012_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.005425 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/012_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/012_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/012_FSCT_output/vegetation_points.las
+Saved.
+/home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/012_FSCT_output/cwd_points.las is empty...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/012_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 1.062746524810791 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//013.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/013.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/013.las
+Subsampling...
+Original number of points: 5931685
+Slice size: 258352     Slice number: 1 / 32
+Slice size: 532086     Slice number: 2 / 32
+Slice size: 564167     Slice number: 3 / 32
+Slice size: 576205     Slice number: 4 / 32
+Slice size: 571795     Slice number: 5 / 32
+Slice size: 563446     Slice number: 6 / 32
+Slice size: 549706     Slice number: 7 / 32
+Slice size: 565386     Slice number: 8 / 32
+Slice size: 603220     Slice number: 9 / 32
+Slice size: 623740     Slice number: 10 / 32
+Slice size: 573624     Slice number: 11 / 32
+Slice size: 503781     Slice number: 12 / 32
+Slice size: 495433     Slice number: 13 / 32
+Slice size: 505047     Slice number: 14 / 32
+Slice size: 556188     Slice number: 15 / 32
+Slice size: 503593     Slice number: 16 / 32
+Slice size: 338029     Slice number: 17 / 32
+Slice size: 262260     Slice number: 18 / 32
+Slice size: 245905     Slice number: 19 / 32
+Slice size: 238122     Slice number: 20 / 32
+Slice size: 215850     Slice number: 21 / 32
+Slice size: 197431     Slice number: 22 / 32
+Slice size: 193485     Slice number: 23 / 32
+Slice size: 196159     Slice number: 24 / 32
+Slice size: 199318     Slice number: 25 / 32
+Slice size: 163380     Slice number: 26 / 32
+Slice size: 131446     Slice number: 27 / 32
+Slice size: 132014     Slice number: 28 / 32
+Slice size: 124325     Slice number: 29 / 32
+Slice size: 141765     Slice number: 30 / 32
+Slice size: 192250     Slice number: 31 / 32
+Slice size: 224479     Slice number: 32 / 32
+Subsampled number of points: 3938900
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/013_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 315.1164073944092 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/189
+4/189
+8/189
+12/189
+16/189
+20/189
+24/189
+28/189
+32/189
+36/189
+40/189
+44/189
+48/189
+52/189
+56/189
+60/189
+64/189
+68/189
+72/189
+76/189
+80/189
+84/189
+88/189
+92/189
+96/189
+100/189
+104/189
+108/189
+112/189
+116/189
+120/189
+124/189
+128/189
+132/189
+136/189
+140/189
+144/189
+148/189
+152/189
+156/189
+160/189
+164/189
+168/189
+172/189
+176/189
+180/189
+184/189
+188/189
+189/189
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/013_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/013_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 50.01191735267639 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/013_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/013_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.010799999999999999 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/013_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/013_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/013_FSCT_output/vegetation_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/013_FSCT_output/cwd_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/013_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 6.858298063278198 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//014.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/014.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/014.las
+Subsampling...
+Original number of points: 1219776
+Slice size: 1571     Slice number: 1 / 32
+Slice size: 5937     Slice number: 2 / 32
+Slice size: 13076     Slice number: 3 / 32
+Slice size: 22117     Slice number: 4 / 32
+Slice size: 35372     Slice number: 5 / 32
+Slice size: 53980     Slice number: 6 / 32
+Slice size: 78378     Slice number: 7 / 32
+Slice size: 92833     Slice number: 8 / 32
+Slice size: 95318     Slice number: 9 / 32
+Slice size: 95178     Slice number: 10 / 32
+Slice size: 83787     Slice number: 11 / 32
+Slice size: 70283     Slice number: 12 / 32
+Slice size: 66286     Slice number: 13 / 32
+Slice size: 63597     Slice number: 14 / 32
+Slice size: 59739     Slice number: 15 / 32
+Slice size: 58163     Slice number: 16 / 32
+Slice size: 58185     Slice number: 17 / 32
+Slice size: 63644     Slice number: 18 / 32
+Slice size: 73404     Slice number: 19 / 32
+Slice size: 106201     Slice number: 20 / 32
+Slice size: 107446     Slice number: 21 / 32
+Slice size: 78118     Slice number: 22 / 32
+Slice size: 74130     Slice number: 23 / 32
+Slice size: 76897     Slice number: 24 / 32
+Slice size: 82926     Slice number: 25 / 32
+Slice size: 91197     Slice number: 26 / 32
+Slice size: 103099     Slice number: 27 / 32
+Slice size: 119322     Slice number: 28 / 32
+Slice size: 120532     Slice number: 29 / 32
+Slice size: 108990     Slice number: 30 / 32
+Slice size: 112501     Slice number: 31 / 32
+Slice size: 111531     Slice number: 32 / 32
+Subsampled number of points: 1043825
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/014_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 18.942082405090332 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/116
+4/116
+8/116
+12/116
+16/116
+20/116
+24/116
+28/116
+32/116
+36/116
+40/116
+44/116
+48/116
+52/116
+56/116
+60/116
+64/116
+68/116
+72/116
+76/116
+80/116
+84/116
+88/116
+92/116
+96/116
+100/116
+104/116
+108/116
+112/116
+116/116
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/014_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/014_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 22.713585138320923 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/014_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/014_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0050375 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/014_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/014_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/014_FSCT_output/vegetation_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/014_FSCT_output/cwd_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/014_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 1.8384790420532227 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//015.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/015.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/015.las
+Subsampling...
+Original number of points: 5889878
+Slice size: 370926     Slice number: 1 / 32
+Slice size: 758016     Slice number: 2 / 32
+Slice size: 744283     Slice number: 3 / 32
+Slice size: 582159     Slice number: 4 / 32
+Slice size: 461692     Slice number: 5 / 32
+Slice size: 446431     Slice number: 6 / 32
+Slice size: 508976     Slice number: 7 / 32
+Slice size: 550435     Slice number: 8 / 32
+Slice size: 538687     Slice number: 9 / 32
+Slice size: 668076     Slice number: 10 / 32
+Slice size: 637986     Slice number: 11 / 32
+Slice size: 482585     Slice number: 12 / 32
+Slice size: 530602     Slice number: 13 / 32
+Slice size: 474920     Slice number: 14 / 32
+Slice size: 281402     Slice number: 15 / 32
+Slice size: 224244     Slice number: 16 / 32
+Slice size: 248233     Slice number: 17 / 32
+Slice size: 267875     Slice number: 18 / 32
+Slice size: 235328     Slice number: 19 / 32
+Slice size: 187583     Slice number: 20 / 32
+Slice size: 174872     Slice number: 21 / 32
+Slice size: 174580     Slice number: 22 / 32
+Slice size: 151219     Slice number: 23 / 32
+Slice size: 125707     Slice number: 24 / 32
+Slice size: 118126     Slice number: 25 / 32
+Slice size: 121457     Slice number: 26 / 32
+Slice size: 146948     Slice number: 27 / 32
+Slice size: 308787     Slice number: 28 / 32
+Slice size: 333026     Slice number: 29 / 32
+Slice size: 225034     Slice number: 30 / 32
+Slice size: 242787     Slice number: 31 / 32
+Slice size: 286546     Slice number: 32 / 32
+Subsampled number of points: 4824968
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/015_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 109.21391034126282 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/198
+4/198
+8/198
+12/198
+16/198
+20/198
+24/198
+28/198
+32/198
+36/198
+40/198
+44/198
+48/198
+52/198
+56/198
+60/198
+64/198
+68/198
+72/198
+76/198
+80/198
+84/198
+88/198
+92/198
+96/198
+100/198
+104/198
+108/198
+112/198
+116/198
+120/198
+124/198
+128/198
+132/198
+136/198
+140/198
+144/198
+148/198
+152/198
+156/198
+160/198
+164/198
+168/198
+172/198
+176/198
+180/198
+184/198
+188/198
+192/198
+196/198
+198/198
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/015_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/015_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 57.62510418891907 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/015_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/015_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.010925 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/015_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/015_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/015_FSCT_output/vegetation_points.las
+Saved.
+/home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/015_FSCT_output/cwd_points.las is empty...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/015_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 8.853444814682007 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//016.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/016.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/016.las
+Subsampling...
+Original number of points: 563447
+Slice size: 13016     Slice number: 1 / 32
+Slice size: 27349     Slice number: 2 / 32
+Slice size: 29187     Slice number: 3 / 32
+Slice size: 31191     Slice number: 4 / 32
+Slice size: 34700     Slice number: 5 / 32
+Slice size: 34262     Slice number: 6 / 32
+Slice size: 26582     Slice number: 7 / 32
+Slice size: 22485     Slice number: 8 / 32
+Slice size: 26316     Slice number: 9 / 32
+Slice size: 33346     Slice number: 10 / 32
+Slice size: 43964     Slice number: 11 / 32
+Slice size: 58730     Slice number: 12 / 32
+Slice size: 75091     Slice number: 13 / 32
+Slice size: 88129     Slice number: 14 / 32
+Slice size: 88878     Slice number: 15 / 32
+Slice size: 80951     Slice number: 16 / 32
+Slice size: 71154     Slice number: 17 / 32
+Slice size: 58567     Slice number: 18 / 32
+Slice size: 48141     Slice number: 19 / 32
+Slice size: 41736     Slice number: 20 / 32
+Slice size: 36026     Slice number: 21 / 32
+Slice size: 31205     Slice number: 22 / 32
+Slice size: 29326     Slice number: 23 / 32
+Slice size: 28918     Slice number: 24 / 32
+Slice size: 22219     Slice number: 25 / 32
+Slice size: 12337     Slice number: 26 / 32
+Slice size: 10235     Slice number: 27 / 32
+Slice size: 9047     Slice number: 28 / 32
+Slice size: 5872     Slice number: 29 / 32
+Slice size: 4010     Slice number: 30 / 32
+Slice size: 2456     Slice number: 31 / 32
+Slice size: 1184     Slice number: 32 / 32
+Subsampled number of points: 95449
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/016_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 8.64926552772522 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/44
+4/44
+8/44
+12/44
+16/44
+20/44
+24/44
+28/44
+32/44
+36/44
+40/44
+44/44
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/016_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/016_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 8.132596969604492 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/016_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/016_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0007874999999999998 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/016_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/016_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/016_FSCT_output/vegetation_points.las
+Saved.
+/home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/016_FSCT_output/cwd_points.las is empty...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/016_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 0.34067440032958984 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//017.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/017.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/017.las
+Subsampling...
+Original number of points: 94735
+Slice size: 397     Slice number: 1 / 32
+Slice size: 1019     Slice number: 2 / 32
+Slice size: 1428     Slice number: 3 / 32
+Slice size: 1881     Slice number: 4 / 32
+Slice size: 2220     Slice number: 5 / 32
+Slice size: 2376     Slice number: 6 / 32
+Slice size: 2603     Slice number: 7 / 32
+Slice size: 3657     Slice number: 8 / 32
+Slice size: 4206     Slice number: 9 / 32
+Slice size: 4547     Slice number: 10 / 32
+Slice size: 4223     Slice number: 11 / 32
+Slice size: 4500     Slice number: 12 / 32
+Slice size: 4595     Slice number: 13 / 32
+Slice size: 4598     Slice number: 14 / 32
+Slice size: 4553     Slice number: 15 / 32
+Slice size: 5740     Slice number: 16 / 32
+Slice size: 6377     Slice number: 17 / 32
+Slice size: 6777     Slice number: 18 / 32
+Slice size: 6167     Slice number: 19 / 32
+Slice size: 6268     Slice number: 20 / 32
+Slice size: 6188     Slice number: 21 / 32
+Slice size: 6365     Slice number: 22 / 32
+Slice size: 6518     Slice number: 23 / 32
+Slice size: 8128     Slice number: 24 / 32
+Slice size: 8877     Slice number: 25 / 32
+Slice size: 9923     Slice number: 26 / 32
+Slice size: 9458     Slice number: 27 / 32
+Slice size: 9912     Slice number: 28 / 32
+Slice size: 10036     Slice number: 29 / 32
+Slice size: 10013     Slice number: 30 / 32
+Slice size: 10097     Slice number: 31 / 32
+Slice size: 11867     Slice number: 32 / 32
+Subsampled number of points: 15973
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/017_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 4.283329725265503 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/20
+4/20
+8/20
+12/20
+16/20
+20/20
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/017_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/017_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 3.8812174797058105 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/017_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/017_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0008749999999999998 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/017_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/017_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/017_FSCT_output/vegetation_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/017_FSCT_output/cwd_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/017_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 0.11841392517089844 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//018.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/018.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/018.las
+Subsampling...
+Original number of points: 3711770
+Slice size: 103848     Slice number: 1 / 32
+Slice size: 196437     Slice number: 2 / 32
+Slice size: 196898     Slice number: 3 / 32
+Slice size: 204263     Slice number: 4 / 32
+Slice size: 191105     Slice number: 5 / 32
+Slice size: 173245     Slice number: 6 / 32
+Slice size: 178739     Slice number: 7 / 32
+Slice size: 179373     Slice number: 8 / 32
+Slice size: 262133     Slice number: 9 / 32
+Slice size: 358295     Slice number: 10 / 32
+Slice size: 264766     Slice number: 11 / 32
+Slice size: 168352     Slice number: 12 / 32
+Slice size: 167098     Slice number: 13 / 32
+Slice size: 172438     Slice number: 14 / 32
+Slice size: 209025     Slice number: 15 / 32
+Slice size: 199727     Slice number: 16 / 32
+Slice size: 152828     Slice number: 17 / 32
+Slice size: 170653     Slice number: 18 / 32
+Slice size: 214902     Slice number: 19 / 32
+Slice size: 243056     Slice number: 20 / 32
+Slice size: 263956     Slice number: 21 / 32
+Slice size: 311441     Slice number: 22 / 32
+Slice size: 324716     Slice number: 23 / 32
+Slice size: 292593     Slice number: 24 / 32
+Slice size: 290356     Slice number: 25 / 32
+Slice size: 312511     Slice number: 26 / 32
+Slice size: 302889     Slice number: 27 / 32
+Slice size: 241462     Slice number: 28 / 32
+Slice size: 205421     Slice number: 29 / 32
+Slice size: 216518     Slice number: 30 / 32
+Slice size: 245613     Slice number: 31 / 32
+Slice size: 266455     Slice number: 32 / 32
+Subsampled number of points: 3045938
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/018_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 66.7223129272461 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/193
+4/193
+8/193
+12/193
+16/193
+20/193
+24/193
+28/193
+32/193
+36/193
+40/193
+44/193
+48/193
+52/193
+56/193
+60/193
+64/193
+68/193
+72/193
+76/193
+80/193
+84/193
+88/193
+92/193
+96/193
+100/193
+104/193
+108/193
+112/193
+116/193
+120/193
+124/193
+128/193
+132/193
+136/193
+140/193
+144/193
+148/193
+152/193
+156/193
+160/193
+164/193
+168/193
+172/193
+176/193
+180/193
+184/193
+188/193
+192/193
+193/193
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/018_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/018_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 43.20836114883423 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/018_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/018_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0098875 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/018_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/018_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/018_FSCT_output/vegetation_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/018_FSCT_output/cwd_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/018_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 4.949249029159546 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//019.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/019.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/019.las
+Subsampling...
+Original number of points: 89470
+Slice size: 4917     Slice number: 1 / 32
+Slice size: 8663     Slice number: 2 / 32
+Slice size: 7548     Slice number: 3 / 32
+Slice size: 7465     Slice number: 4 / 32
+Slice size: 7281     Slice number: 5 / 32
+Slice size: 7183     Slice number: 6 / 32
+Slice size: 7195     Slice number: 7 / 32
+Slice size: 8471     Slice number: 8 / 32
+Slice size: 8419     Slice number: 9 / 32
+Slice size: 8284     Slice number: 10 / 32
+Slice size: 6777     Slice number: 11 / 32
+Slice size: 6685     Slice number: 12 / 32
+Slice size: 6738     Slice number: 13 / 32
+Slice size: 6651     Slice number: 14 / 32
+Slice size: 6316     Slice number: 15 / 32
+Slice size: 6971     Slice number: 16 / 32
+Slice size: 6756     Slice number: 17 / 32
+Slice size: 6396     Slice number: 18 / 32
+Slice size: 4996     Slice number: 19 / 32
+Slice size: 4652     Slice number: 20 / 32
+Slice size: 4473     Slice number: 21 / 32
+Slice size: 4480     Slice number: 22 / 32
+Slice size: 4455     Slice number: 23 / 32
+Slice size: 4866     Slice number: 24 / 32
+Slice size: 4453     Slice number: 25 / 32
+Slice size: 4008     Slice number: 26 / 32
+Slice size: 3205     Slice number: 27 / 32
+Slice size: 3215     Slice number: 28 / 32
+Slice size: 2971     Slice number: 29 / 32
+Slice size: 2685     Slice number: 30 / 32
+Slice size: 2257     Slice number: 31 / 32
+Slice size: 1685     Slice number: 32 / 32
+Subsampled number of points: 29843
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/019_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 4.340578317642212 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/34
+4/34
+8/34
+12/34
+16/34
+20/34
+24/34
+28/34
+32/34
+34/34
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/019_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/019_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 5.289211750030518 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/019_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/019_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0007999999999999996 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/019_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/019_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/019_FSCT_output/vegetation_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/019_FSCT_output/cwd_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/019_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 0.11585354804992676 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//020.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/020.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/020.las
+Subsampling...
+Original number of points: 253259
+Slice size: 139     Slice number: 1 / 32
+Slice size: 523     Slice number: 2 / 32
+Slice size: 1217     Slice number: 3 / 32
+Slice size: 2466     Slice number: 4 / 32
+Slice size: 4029     Slice number: 5 / 32
+Slice size: 9368     Slice number: 6 / 32
+Slice size: 11590     Slice number: 7 / 32
+Slice size: 6243     Slice number: 8 / 32
+Slice size: 3082     Slice number: 9 / 32
+Slice size: 2962     Slice number: 10 / 32
+Slice size: 3368     Slice number: 11 / 32
+Slice size: 3779     Slice number: 12 / 32
+Slice size: 3865     Slice number: 13 / 32
+Slice size: 4041     Slice number: 14 / 32
+Slice size: 3955     Slice number: 15 / 32
+Slice size: 3879     Slice number: 16 / 32
+Slice size: 4372     Slice number: 17 / 32
+Slice size: 4728     Slice number: 18 / 32
+Slice size: 5829     Slice number: 19 / 32
+Slice size: 10301     Slice number: 20 / 32
+Slice size: 18070     Slice number: 21 / 32
+Slice size: 48687     Slice number: 22 / 32
+Slice size: 72841     Slice number: 23 / 32
+Slice size: 56216     Slice number: 24 / 32
+Slice size: 33822     Slice number: 25 / 32
+Slice size: 26449     Slice number: 26 / 32
+Slice size: 28038     Slice number: 27 / 32
+Slice size: 28464     Slice number: 28 / 32
+Slice size: 25504     Slice number: 29 / 32
+Slice size: 22280     Slice number: 30 / 32
+Slice size: 21825     Slice number: 31 / 32
+Slice size: 22872     Slice number: 32 / 32
+Subsampled number of points: 228086
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/020_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 6.315316200256348 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/54
+4/54
+8/54
+12/54
+16/54
+20/54
+24/54
+28/54
+32/54
+36/54
+40/54
+44/54
+48/54
+52/54
+54/54
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/020_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/020_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 10.084325075149536 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/020_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/020_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0008625 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/020_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/020_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/020_FSCT_output/vegetation_points.las
+Saved.
+/home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/020_FSCT_output/cwd_points.las is empty...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/020_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 0.40574049949645996 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//021.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/021.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/021.las
+Subsampling...
+Original number of points: 5441243
+Slice size: 165764     Slice number: 1 / 32
+Slice size: 319101     Slice number: 2 / 32
+Slice size: 317381     Slice number: 3 / 32
+Slice size: 326491     Slice number: 4 / 32
+Slice size: 335152     Slice number: 5 / 32
+Slice size: 321541     Slice number: 6 / 32
+Slice size: 293644     Slice number: 7 / 32
+Slice size: 298899     Slice number: 8 / 32
+Slice size: 324618     Slice number: 9 / 32
+Slice size: 342650     Slice number: 10 / 32
+Slice size: 282925     Slice number: 11 / 32
+Slice size: 180588     Slice number: 12 / 32
+Slice size: 147122     Slice number: 13 / 32
+Slice size: 145044     Slice number: 14 / 32
+Slice size: 154651     Slice number: 15 / 32
+Slice size: 179064     Slice number: 16 / 32
+Slice size: 214770     Slice number: 17 / 32
+Slice size: 291689     Slice number: 18 / 32
+Slice size: 370901     Slice number: 19 / 32
+Slice size: 406722     Slice number: 20 / 32
+Slice size: 385342     Slice number: 21 / 32
+Slice size: 375151     Slice number: 22 / 32
+Slice size: 393333     Slice number: 23 / 32
+Slice size: 364244     Slice number: 24 / 32
+Slice size: 340478     Slice number: 25 / 32
+Slice size: 360273     Slice number: 26 / 32
+Slice size: 396650     Slice number: 27 / 32
+Slice size: 433498     Slice number: 28 / 32
+Slice size: 421760     Slice number: 29 / 32
+Slice size: 419943     Slice number: 30 / 32
+Slice size: 511625     Slice number: 31 / 32
+Slice size: 662764     Slice number: 32 / 32
+Subsampled number of points: 5260627
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/021_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 93.86892461776733 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/198
+4/198
+8/198
+12/198
+16/198
+20/198
+24/198
+28/198
+32/198
+36/198
+40/198
+44/198
+48/198
+52/198
+56/198
+60/198
+64/198
+68/198
+72/198
+76/198
+80/198
+84/198
+88/198
+92/198
+96/198
+100/198
+104/198
+108/198
+112/198
+116/198
+120/198
+124/198
+128/198
+132/198
+136/198
+140/198
+144/198
+148/198
+152/198
+156/198
+160/198
+164/198
+168/198
+172/198
+176/198
+180/198
+184/198
+188/198
+192/198
+196/198
+198/198
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/021_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/021_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 61.119980812072754 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/021_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/021_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0104625 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/021_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/021_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/021_FSCT_output/vegetation_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/021_FSCT_output/cwd_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/021_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 9.508494853973389 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//022.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/022.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/022.las
+Subsampling...
+Original number of points: 2966002
+Slice size: 217173     Slice number: 1 / 32
+Slice size: 347849     Slice number: 2 / 32
+Slice size: 265769     Slice number: 3 / 32
+Slice size: 266120     Slice number: 4 / 32
+Slice size: 217569     Slice number: 5 / 32
+Slice size: 164869     Slice number: 6 / 32
+Slice size: 183591     Slice number: 7 / 32
+Slice size: 210288     Slice number: 8 / 32
+Slice size: 194614     Slice number: 9 / 32
+Slice size: 145468     Slice number: 10 / 32
+Slice size: 118047     Slice number: 11 / 32
+Slice size: 119518     Slice number: 12 / 32
+Slice size: 207500     Slice number: 13 / 32
+Slice size: 362319     Slice number: 14 / 32
+Slice size: 386986     Slice number: 15 / 32
+Slice size: 244877     Slice number: 16 / 32
+Slice size: 133357     Slice number: 17 / 32
+Slice size: 124552     Slice number: 18 / 32
+Slice size: 144377     Slice number: 19 / 32
+Slice size: 168844     Slice number: 20 / 32
+Slice size: 185763     Slice number: 21 / 32
+Slice size: 145728     Slice number: 22 / 32
+Slice size: 94651     Slice number: 23 / 32
+Slice size: 84996     Slice number: 24 / 32
+Slice size: 85904     Slice number: 25 / 32
+Slice size: 96682     Slice number: 26 / 32
+Slice size: 105993     Slice number: 27 / 32
+Slice size: 130577     Slice number: 28 / 32
+Slice size: 228306     Slice number: 29 / 32
+Slice size: 264773     Slice number: 30 / 32
+Slice size: 155997     Slice number: 31 / 32
+Slice size: 81752     Slice number: 32 / 32
+Subsampled number of points: 3164523
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/022_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 39.830716609954834 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/198
+4/198
+8/198
+12/198
+16/198
+20/198
+24/198
+28/198
+32/198
+36/198
+40/198
+44/198
+48/198
+52/198
+56/198
+60/198
+64/198
+68/198
+72/198
+76/198
+80/198
+84/198
+88/198
+92/198
+96/198
+100/198
+104/198
+108/198
+112/198
+116/198
+120/198
+124/198
+128/198
+132/198
+136/198
+140/198
+144/198
+148/198
+152/198
+156/198
+160/198
+164/198
+168/198
+172/198
+176/198
+180/198
+184/198
+188/198
+192/198
+196/198
+198/198
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/022_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/022_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 46.728723764419556 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/022_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/022_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.010837499999999998 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/022_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/022_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/022_FSCT_output/vegetation_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/022_FSCT_output/cwd_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/022_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 5.325762510299683 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Processing /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1//023.ply file...
+Converting point cloud to las format.
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1/023.las
+Using default number of CPU cores (all of them).
+Processing using  32 / 32  CPU cores.
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/023.las
+Subsampling...
+Original number of points: 382389
+Slice size: 248     Slice number: 1 / 32
+Slice size: 695     Slice number: 2 / 32
+Slice size: 1276     Slice number: 3 / 32
+Slice size: 1900     Slice number: 4 / 32
+Slice size: 2373     Slice number: 5 / 32
+Slice size: 3424     Slice number: 6 / 32
+Slice size: 4693     Slice number: 7 / 32
+Slice size: 5720     Slice number: 8 / 32
+Slice size: 7273     Slice number: 9 / 32
+Slice size: 8954     Slice number: 10 / 32
+Slice size: 11059     Slice number: 11 / 32
+Slice size: 15415     Slice number: 12 / 32
+Slice size: 20687     Slice number: 13 / 32
+Slice size: 26289     Slice number: 14 / 32
+Slice size: 42364     Slice number: 15 / 32
+Slice size: 61593     Slice number: 16 / 32
+Slice size: 94798     Slice number: 17 / 32
+Slice size: 148242     Slice number: 18 / 32
+Slice size: 131812     Slice number: 19 / 32
+Slice size: 55836     Slice number: 20 / 32
+Slice size: 16597     Slice number: 21 / 32
+Slice size: 9585     Slice number: 22 / 32
+Slice size: 9158     Slice number: 23 / 32
+Slice size: 9916     Slice number: 24 / 32
+Slice size: 10489     Slice number: 25 / 32
+Slice size: 10399     Slice number: 26 / 32
+Slice size: 9808     Slice number: 27 / 32
+Slice size: 9269     Slice number: 28 / 32
+Slice size: 8742     Slice number: 29 / 32
+Slice size: 8218     Slice number: 30 / 32
+Slice size: 7459     Slice number: 31 / 32
+Slice size: 6934     Slice number: 32 / 32
+Subsampled number of points: 238620
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/023_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 6.723798751831055 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/50
+4/50
+8/50
+12/50
+16/50
+20/50
+24/50
+28/50
+32/50
+36/50
+40/50
+44/50
+48/50
+50/50
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/023_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/023_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 9.832721471786499 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/023_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/023_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0008749999999999998 ha
+Getting heights above DTM...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/023_FSCT_output/terrain_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/023_FSCT_output/stem_points.las
+Saved.
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/023_FSCT_output/vegetation_points.las
+Saved.
+/home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/023_FSCT_output/cwd_points.las is empty...
+Saving file: /home/nibio/mutable-outside-world/segmented_point_clouds/tiled/1/023_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 0.3647119998931885 seconds
+Post processing done.
+Copying results to output directory.
+Doing reduction.
+Merging the segmented point clouds
+Only merging the ply files
+Renaming /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1 to /home/nibio/mutable-outside-world//segmented_point_clouds/tiled/1
+Semantic segmentation done.

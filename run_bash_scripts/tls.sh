@@ -3,19 +3,31 @@
 ############################ parameters #################################################
 # General parameters
 CLEAR_INPUT_FOLDER=0  # 1: clear input folder, 0: not clear input folder
-CONDA_ENV="pdal-env-exp" # conda environment for running the pipeline
+CONDA_ENV="pdal-env" # conda environment for running the pipeline
 
 # Tiling parameters
 data_folder="/home/nibio/mutable-outside-world/" # path to the folder containing the data
+#p2t_semantic
+#N_TILES=3
+#SLICE_THICKNESS=0.5
+#FIND_STEMS_HEIGHT=1.5
+#FIND_STEMS_THICKNESS=0.5
+#GRAPH_MAXIMUM_CUMULATIVE_GAP=3
+#ADD_LEAVES_VOXEL_LENGTH=0.5
+#FIND_STEMS_MIN_POINTS=50
+#GRAPH_EDGE_LENGTH=1.0
+#ADD_LEAVES_EDGE_LENGTH=1.0
+
+#fsct_semantic
 N_TILES=3
-SLICE_THICKNESS=0.5
-FIND_STEMS_HEIGHT=1.5
-FIND_STEMS_THICKNESS=0.5
-GRAPH_MAXIMUM_CUMULATIVE_GAP=3
-ADD_LEAVES_VOXEL_LENGTH=0.5
-FIND_STEMS_MIN_POINTS=50
-GRAPH_EDGE_LENGTH=1.0
-ADD_LEAVES_EDGE_LENGTH=1.0
+SLICE_THICKNESS=0.678
+FIND_STEMS_HEIGHT=1.614
+FIND_STEMS_THICKNESS=0.46
+GRAPH_MAXIMUM_CUMULATIVE_GAP=6.826
+ADD_LEAVES_VOXEL_LENGTH=0.159
+FIND_STEMS_MIN_POINTS=84
+GRAPH_EDGE_LENGTH=0.66
+ADD_LEAVES_EDGE_LENGTH=1.115
 
 ############################# end of parameters declaration ############################
 
