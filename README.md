@@ -34,10 +34,9 @@ You should reboot shell session at this point.
 
 conda create --name pdal-env python=3.8.13
 conda activate pdal-env
-~~ conda install -c conda-forge pdal python-pdal ~~
-
-
 ```
+~~conda install -c conda-forge pdal python-pdal~~
+
 You should reboot shell session at this point. 
 Next, you should clone the repo with the following command: 
 
