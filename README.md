@@ -53,6 +53,7 @@ You have to install requirements for the repo.
 Original repo installs pdal together with python-pdal but this resulted in errors for me
 ```
 conda install -c conda-forge python-pdal
+conda install numpy==1.22.4
 ```
 # Running the pipeline with the NIBIO code
 
