@@ -6,7 +6,7 @@ CLEAR_INPUT_FOLDER=0  # 1: clear input folder, 0: not clear input folder
 CONDA_ENV="pdal-env" # conda environment for running the pipeline
 
 # Parameters for the semetnic segmentation
-data_folder="/home/nibio/mutable-outside-world/" # path to the folder containing the data
+data_folder="/mnt/z/tobias/data_point2tree/docker/" # path to the folder containing the data
 checkpoint_model_path="./fsct/model/model.pth" # path to the checkpoint model (take our basic model as default)
 batch_size=4 # batch size for the inference
 tile_size=10 # tile size in meters

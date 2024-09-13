@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.2.1-cudnn8-runtime-ubuntu20.04
+FROM nvidia/cuda:11.2.2-cudnn8-runtime-ubuntu20.04
 
 RUN ln -fs /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libxext6 \
     libxrender-dev \
     libsndfile1 \
+    curl \
     && rm -rf /var/lib/apt/lists/* \
     && python3 -m pip install --no-cache-dir --upgrade \
     autopep8 \
@@ -35,26 +36,29 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     tqdm \
     pandas
     
-# OpenSSH configuration
-RUN mkdir /var/run/sshd \
-    && sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
                                                     
 # Create non-root user
 ARG UID=1000
 ARG GID=1000
-ARG USERNAME=nibio
-ENV HOME /home/${USERNAME}
+ARG USERNAME=vscode
 
+# 1001 is the group id for data-mole on beast1
 RUN groupadd -g ${GID} ${USERNAME} \
     && useradd -ms /bin/bash -u ${UID} -g ${GID} -G sudo ${USERNAME} \
     && echo "${USERNAME}:${USERNAME}" | chpasswd \
-    && mkdir -p ${HOME}/data ${HOME}/.vscode-server ${HOME}/.ssh \
-    && chown ${USERNAME}:${USERNAME} ${HOME}/data ${HOME}/.vscode-server ${HOME}/.ssh
+    && echo "${USERNAME} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers \
+    && groupadd -g 1001 data-mole \
+    && usermod -a -G data-mole ${USERNAME}
+
+USER ${USERNAME}
+WORKDIR /home/${USERNAME}
+
+RUN bash -c "$(curl -L micro.mamba.pm/install.sh)"
+# mkdir conda_installation \
+# && cd conda_installation \
+# && curl -LO "http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh" \
+# && bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/miniconda \
+# && ~/miniconda/bin/conda init bash
 
 
-VOLUME [ "${HOME}/data", "${HOME}/.ssh", "${HOME}/.vscode-server"]
 
-# Expose SSH
-EXPOSE 22
-
-CMD [ "/usr/sbin/sshd", "-D" ]

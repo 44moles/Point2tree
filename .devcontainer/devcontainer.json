@@ -1,0 +1,35 @@
+{
+    "build": {
+      "dockerfile": "../docker/Dockerfile"
+    },
+    "customizations": {
+      // Configure properties specific to VS Code.
+      "vscode": {
+        // Add the IDs of extensions you want installed when the container is created.
+        "extensions": [
+          "twxs.cmake",
+          "ms-vscode.cpptools-themes",
+          "ms-vscode.cpptools",
+          "ms-python.python",
+          "ms-python.vscode-pylance",
+          "ms-toolsai.jupyter",
+          "benjamin-simmonds.pythoncpp-debug",
+          "github.copilot",
+          "tamasfe.even-better-toml",
+          "git-emoji.vscode-git-emoji",
+          "eamodio.gitlens",
+          "jjjermiah.pixi-vscode"
+        ]
+      }
+    },
+   "runArgs": ["--gpus=all"], // support for nvidia docker
+  //  "features": {
+  //    "ghcr.io/devcontainers/features/github-cli:1": {}
+  //  },
+    "mounts": [
+      "source=/mnt/z,target=/mnt/z,type=bind,consistency=cached",
+      "source=/mnt/y,target=/mnt/y,type=bind,consistency=cached"
+    ],
+    // this need access to the repo so needs to run after the container is build
+    "postCreateCommand": "bash ./install.sh"
+  }
