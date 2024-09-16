@@ -108,9 +108,11 @@ if __name__ == "__main__":
     print("--------------------------------------------------------------------------------------------")
     try:
         from_ = os.path.join(results_dir_name, "segmented_cleaned.las")
-        to_ = args.odir
+        # to_ = args.odir
+        to_ = os.path.join(args.odir, "segmented_cleaned.las")
         print(f"Copying {from_} to {to_}")
-        shutil.copy(from_, to_)
+        # shutil.copy(from_, to_)
+        shutil.copyfile(from_, to_)
     except PermissionError as e:
         print(f"PermissionError: {e}")
     except Exception as e:

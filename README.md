@@ -9,8 +9,8 @@ Easy way to run Point2tree:
 ```
 1. Run devcontainer
 2. micromamba activate pdal-env
-3. Semantic segmentation: bash run_bash_scripts/sem_seg_sean.sh -d /path/to/folder
-4. Instance segmentation: bash run_bash_scripts/tls.sh -d /path/to/folder
+2. Semantic segmentation: bash run_bash_scripts/sem_seg_sean.sh -d /path/to/folder
+3. Instance segmentation: bash run_bash_scripts/tls.sh -d /path/to/folder
 ```
 
 Modified steps from the original repo:
