@@ -3,11 +3,9 @@ This repo includes the scripts to replicate the methods described in [Wielgosz e
 ![P2T](https://github.com/SmartForest-no/Point2tree/assets/5663984/1bd1f06f-41ca-40a4-98f2-d42f5055e9b3)
 
 # Installation steps of the pipeline
-The installation involves conda.
-
-The steps to take on Ubuntu 20.04 machine on a linux machine or in a docker:
 
 Easy way to run Point2tree:
+
 ```
 1. Run devcontainer
 2. micromamba activate pdal-env
@@ -16,6 +14,12 @@ Easy way to run Point2tree:
 ```
 
 Modified steps from the original repo:
+
+The installation involves conda.
+
+The steps to take on Ubuntu 20.04 machine on a linux machine or in a docker:
+
+
 If you go for the docker you can use files which are in`./docker`. Install it first and then follow the steps which are given below.
 
 ```
