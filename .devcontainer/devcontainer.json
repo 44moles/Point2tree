@@ -22,7 +22,7 @@
         ]
       }
     },
-   "runArgs": ["--gpus=all"], // support for nvidia docker
+   "runArgs": ["--gpus=all", "--shm-size=32gb"], // support for nvidia docker
   //  "features": {
   //    "ghcr.io/devcontainers/features/github-cli:1": {}
   //  },

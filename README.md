@@ -7,6 +7,15 @@ The installation involves conda.
 
 The steps to take on Ubuntu 20.04 machine on a linux machine or in a docker:
 
+Easy way to run Point2tree:
+```
+1. Run devcontainer
+2. micromamba activate pdal-env
+3. Semantic segmentation: bash run_bash_scripts/sem_seg_sean.sh -d /path/to/folder
+4. Instance segmentation: bash run_bash_scripts/tls.sh -d /path/to/folder
+```
+
+Modified steps from the original repo:
 If you go for the docker you can use files which are in`./docker`. Install it first and then follow the steps which are given below.
 
 ```
@@ -43,7 +52,6 @@ Next, you should clone the repo with the following command:
 ```
 git clone https://github.com/SmartForest-no/Point2tree.git
 ```
-
 
 You have to install requirements for the repo.
  ```

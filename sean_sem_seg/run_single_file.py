@@ -105,7 +105,16 @@ if __name__ == "__main__":
     results_dir_name = os.path.join(dir_core_name, file_name + '_FSCT_output')
 
     print("Copying results to output directory.")
-    shutil.copy(os.path.join(results_dir_name, "segmented_cleaned.las"), args.odir)
+    print("--------------------------------------------------------------------------------------------")
+    try:
+        from_ = os.path.join(results_dir_name, "segmented_cleaned.las")
+        to_ = args.odir
+        print(f"Copying {from_} to {to_}")
+        shutil.copy(from_, to_)
+    except PermissionError as e:
+        print(f"PermissionError: {e}")
+    except Exception as e:
+        print(f"Error: {e}")
 
     print("Doing reduction.")
 
