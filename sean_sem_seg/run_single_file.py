@@ -32,6 +32,8 @@ if __name__ == "__main__":
         print("Converting point cloud to las format.")
         # convert to las and name it as the original file name
         las_file = os.path.join(args.odir, os.path.basename(args.point_cloud).split(".")[0] + ".las")
+        print("____________________________________________________________________________")
+        print(las_file)
         pipeline = pdal.Pipeline(json.dumps({
             "pipeline": [
                 args.point_cloud,

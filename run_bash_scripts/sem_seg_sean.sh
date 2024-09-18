@@ -6,9 +6,9 @@ CLEAR_INPUT_FOLDER=0  # 1: clear input folder, 0: not clear input folder
 CONDA_ENV="pdal-env" # conda environment for running the pipeline
 
 # Parameters for the semetnic segmentation
-data_folder="/mnt/z/tobias/data_point2tree/docker/" # path to the folder containing the data
+data_folder="/mnt/z/tobias/data_point2tree/docker" # path to the folder containing the data
 checkpoint_model_path="./fsct/model/model.pth" # path to the checkpoint model (take our basic model as default)
-batch_size=4 # batch size for the inference
+batch_size=8 # batch size for the inference
 tile_size=10 # tile size in meters
 min_density=75 # minimum density of points in a tile(used for removing small tiles)
 remove_small_tiles=0 # 1: remove small tiles, 0: not remove small tiles
@@ -130,7 +130,7 @@ find $data_folder/ -type f -name '*.ply' -exec mv {} $data_folder/segmented_poin
 # do the tiling and tile index generation
 echo "Tiling and tile index generation"
 python nibio_preprocessing/tiling.py \
--i $data_folder/segmented_point_clouds/ \
+-i $data_folder/segmented_point_clouds \
 -o $data_folder/segmented_point_clouds/tiled \
 --tile_size $tile_size
 
@@ -151,7 +151,7 @@ then
 fi
 
 # iterate over all the directories in the tiled folder
-for d in $data_folder/segmented_point_clouds/tiled/*/; do
+for d in $data_folder/segmented_point_clouds/tiled/*; do
     for f in $d/*.ply; do
         echo "Processing $f file..."
         python sean_sem_seg/run_single_file.py \

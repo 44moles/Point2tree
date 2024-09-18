@@ -51,7 +51,8 @@ class Tiling:
                 {
                     "type":"writers.ply",
                     "storage_mode":"little endian",
-                    "filename":file_folder + "/#.ply" 
+                    "filename":file_folder + "/#.ply" # <- why is there a #.ply?
+                    # "filename":file_folder + "/*.ply"
                   
                 }
             ]
@@ -85,15 +86,19 @@ class Tiling:
 
         # get all the files in the input folder (ply format assummed)
         files = glob.glob(self.input_folder + "/*.ply") 
-
+        print("input folder:-----------------------------------------------------------------------")
+        print(self.input_folder + "/*.ply")
         # loop through all the files
-        Parallel(n_jobs=1)(delayed(self.do_tiling_of_single_file)(file) for file in tqdm(files))
+        # Parallel(n_jobs=1)(delayed(self.do_tiling_of_single_file)(file) for file in tqdm(files))
+        for file in tqdm(files):
+            self.do_tiling_of_single_file(file)
 
     def convert_single_file_from_las_to_ply(self, file):
         """
         This function will convert a single file from las to ply
         """
-
+        print("file:-----------------------------------------------------------------------")
+        print(file)
         # get a name for the file 
         file_name_base = os.path.splitext(file)[0]
 
