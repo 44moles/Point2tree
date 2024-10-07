@@ -38,7 +38,11 @@ class ConvertFilesInFolder(object):
         # define the output file path
         output_file_path = os.path.join(self.output_folder, file_name_no_ext + "." + self.out_file_type)
         # define the command
-        command = "pdal translate -i {} -o {}".format(file_path, output_file_path)
+        if output_file_path.split('.')[1] == "ply":
+            command = "pdal translate -i {} -o {} --writers.ply.storage_mode='little endian'".format(file_path, output_file_path)
+        else:
+            command = "pdal translate -i {} -o {}".format(file_path, output_file_path)
+        # command = 'pdal translate {} {} --writers.ply.storage_mode="little endian"'.format("/mnt/z/tobias/data_point2tree/docker/2_norm.laz", "/mnt/z/tobias/data_point2tree/docker/2_norm.ply")
         # run the command
         os.system(command)
 
@@ -80,11 +84,11 @@ class ConvertFilesInFolder(object):
 
         # iterate over all files and convert them
 
-        # for file_path in tqdm(file_paths):
-        #     self.convert_file(file_path)
+        for file_path in tqdm(file_paths):
+            self.convert_file(file_path)
 
         # use joblib to speed up the process
-        Parallel(n_jobs=1)(delayed(self.convert_file)(file_path) for file_path in tqdm(file_paths))
+        # Parallel(n_jobs=1)(delayed(self.convert_file)(file_path) for file_path in tqdm(file_paths))
         
         # print out the progress
         if self.verbose:
