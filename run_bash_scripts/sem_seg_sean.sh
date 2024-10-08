@@ -6,9 +6,9 @@ CLEAR_INPUT_FOLDER=0  # 1: clear input folder, 0: not clear input folder
 CONDA_ENV="pdal-env" # conda environment for running the pipeline
 
 # Parameters for the semetnic segmentation
-data_folder="/mnt/z/tobias/data_point2tree/docker" # path to the folder containing the data
+data_folder="/mnt/z/tobias/data_point2tree/docker2" # path to the folder containing the data
 checkpoint_model_path="./fsct/model/model.pth" # path to the checkpoint model (take our basic model as default)
-batch_size=8 # batch size for the inference
+batch_size=20 # batch size for the inference
 tile_size=10 # tile size in meters
 min_density=75 # minimum density of points in a tile(used for removing small tiles)
 remove_small_tiles=0 # 1: remove small tiles, 0: not remove small tiles

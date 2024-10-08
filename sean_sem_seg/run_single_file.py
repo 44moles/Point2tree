@@ -139,7 +139,8 @@ if __name__ == "__main__":
         },
         {
             "type": "writers.ply",
-            "filename": os.path.join(args.odir, "segmented_cleaned.ply")
+            "filename": os.path.join(args.odir, "segmented_cleaned.ply"),
+            "storage_mode": "little endian"
         },
     ]
     # create a pipeline manager
