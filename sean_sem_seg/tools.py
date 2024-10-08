@@ -13,6 +13,7 @@ from copy import deepcopy
 # import hdbscan
 from multiprocessing import get_context
 from scipy import spatial
+import sys
 
 
 def get_fsct_path(location_in_fsct=""):
@@ -75,7 +76,7 @@ def subsample_point_cloud(pointcloud, min_spacing, num_cpu_cores=1):
     print("Original number of points:", pointcloud.shape[0])
 
     if num_cpu_cores > 1:
-        num_slices = num_cpu_cores
+        num_slices = int(num_cpu_cores/3)
         Xmin = np.min(pointcloud[:, 0])
         Xmax = np.max(pointcloud[:, 0])
         Xrange = Xmax - Xmin
@@ -87,6 +88,12 @@ def subsample_point_cloud(pointcloud, min_spacing, num_cpu_cores=1):
             # mask = np.logical_and(pointcloud[:, 0] >= min_bound, pointcloud[:, 0] < max_bound)
             pc_slice = pointcloud[results]
             print("Slice size:", pc_slice.shape[0], "    Slice number:", i + 1, "/", num_slices)
+
+            # assert pc_slice.shape[0] == 0, "One slice has size 0. Choose different tile size and try again."
+            # if pc_slice.shape[0] == 0:
+            #     print("One slice has size 0. Choose different tile size and try again.")
+            #     sys.exit()
+            
             slice_list.append([pc_slice, min_spacing])
 
         pointcloud = np.zeros((0, pointcloud.shape[1]))
