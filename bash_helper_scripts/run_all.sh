@@ -175,6 +175,7 @@ for instance_segmented_point_cloud in $data_folder/instance_segmented_point_clou
     pdal translate \
     $data_folder/results/instance_segmented_point_clouds/$instance_segmented_point_cloud_name_no_ext.ply \
     $data_folder/results/instance_segmented_point_clouds/$instance_segmented_point_cloud_name_no_ext.las \
+    --writers.las.forward=all \
     --writers.las.dataformat_id=3 \
     --writers.las.scale_x=0.01 \
     --writers.las.scale_y=0.01 \

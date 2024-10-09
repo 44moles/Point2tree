@@ -39,7 +39,8 @@ if __name__ == "__main__":
                 args.point_cloud,
                 {
                     "type": "writers.las",
-                    "filename": las_file
+                    "filename": las_file,
+                    "forward" : "all"
                 }
             ]
         }))

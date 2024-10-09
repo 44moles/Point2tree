@@ -68,7 +68,7 @@ class MetricSemSeg:
                     file_name_las = os.path.join(self.pred_folder, file_name_las)
                     if self.verbose:
                         print("converting {} to las file".format(file))
-                    os.system("pdal translate {} {} --writers.las.dataformat_id=3 --writers.las.extra_dims=all".format(file_name, file_name_las))
+                    os.system("pdal translate {} {} --writers.las.dataformat_id=3 --writers.las.extra_dims=all --writers.las.forward=all".format(file_name, file_name_las))
                     file_name_list_predicted.append(file_name_las)
 
         # remove double files

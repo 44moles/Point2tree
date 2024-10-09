@@ -190,6 +190,7 @@ for instance_segmented_point_cloud in $data_folder/instance_segmented_point_clou
     pdal translate \
     $data_folder/results/instance_segmented_point_clouds/$instance_segmented_point_cloud_name_no_ext.ply \
     $data_folder/results/instance_segmented_point_clouds/$instance_segmented_point_cloud_name_no_ext.las \
+    --writers.las.forward=all \ 
     --writers.las.dataformat_id=3 \
     --writers.las.extra_dims=all
 done
@@ -209,6 +210,7 @@ for segmented_point_cloud_in_ply in $data_folder/results/segmented_point_clouds/
     pdal translate \
     $segmented_point_cloud_in_ply \
     $data_folder/results/segmented_point_clouds/$segmented_point_cloud_in_las_name_no_extension.las \
+    --writers.las.forward=all \
     --writers.las.dataformat_id=3 \
     --writers.las.extra_dims=all
 done

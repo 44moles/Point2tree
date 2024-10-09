@@ -104,7 +104,7 @@ def main(path_to_config_file):
             output_file_name = os.path.join(dir_name, file_name + ".segmented.las")
 
             # create the command
-            os.system("pdal translate {} {} --writers.las.dataformat_id=3 --writers.las.extra_dims=all".format(input_file, output_file_name))
+            os.system("pdal translate {} {} --writers.las.dataformat_id=3 --writers.las.extra_dims=all --writers.las.forward=all".format(input_file, output_file_name))
         
         # copy the converted files to the output folder
         las_segmented_files = [os.path.join(source_dir, file) for file in os.listdir(source_dir) if file.endswith(".segmented.las")]

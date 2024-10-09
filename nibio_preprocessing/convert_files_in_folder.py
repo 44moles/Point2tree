@@ -41,7 +41,7 @@ class ConvertFilesInFolder(object):
         if output_file_path.split('.')[1] == "ply":
             command = "pdal translate -i {} -o {} --writers.ply.storage_mode='little endian'".format(file_path, output_file_path)
         else:
-            command = "pdal translate -i {} -o {}".format(file_path, output_file_path)
+            command = "pdal translate -i {} -o {} --writers.las.forward=all".format(file_path, output_file_path)
         # command = 'pdal translate {} {} --writers.ply.storage_mode="little endian"'.format("/mnt/z/tobias/data_point2tree/docker/2_norm.laz", "/mnt/z/tobias/data_point2tree/docker/2_norm.ply")
         # run the command
         os.system(command)

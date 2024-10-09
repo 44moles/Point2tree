@@ -21,7 +21,8 @@ class PDALSubsamplingCenterNN:
             {
                 "type": "writers.las",
                 "filename": self.output_file,
-                "extra_dims": "all"
+                "extra_dims": "all",
+                "forward" : "all"
             },
         ]
 
