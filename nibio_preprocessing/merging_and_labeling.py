@@ -73,10 +73,10 @@ def merge_ply_files(data_folder, output_file='output_instance_segmented.ply'):
 
     if output_file == 'output_instance_segmented.ply':
         # if the output file is the default one, then we want to save it in the data folder
-        data["pipeline"].append({"type":"writers.ply", "filename":os.path.join(data_folder, output_file)})
+        data["pipeline"].append({"type":"writers.ply", "filename":os.path.join(data_folder, output_file), "storage_mode": "little endian"})
     else:
         # if the output file is not the default one, then we want to save it the target folder
-        data["pipeline"].append({"type":"writers.ply", "filename":output_file})
+        data["pipeline"].append({"type":"writers.ply", "filename":output_file, "storage_mode": "little endian"})
 
     # print where the file is saved
     logging.info("The file is saved in: " + os.path.join(data_folder, output_file))
