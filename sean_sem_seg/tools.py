@@ -76,7 +76,7 @@ def subsample_point_cloud(pointcloud, min_spacing, num_cpu_cores=1):
     print("Original number of points:", pointcloud.shape[0])
 
     if num_cpu_cores > 1:
-        num_slices = int(num_cpu_cores/3)
+        num_slices = int(2)
         Xmin = np.min(pointcloud[:, 0])
         Xmax = np.max(pointcloud[:, 0])
         Xrange = Xmax - Xmin
