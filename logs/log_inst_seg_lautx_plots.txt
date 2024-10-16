@@ -1,0 +1,191 @@
+      The list of letters for the parameters:
+d: data_folder
+n: N_TILES
+s: SLICE_THICKNESS
+h: FIND_STEMS_HEIGHT
+t: FIND_STEMS_THICKNESS
+g: GRAPH_MAXIMUM_CUMULATIVE_GAP
+l: ADD_LEAVES_VOXEL_LENGTH
+m: FIND_STEMS_MIN_POINTS
+o: GRAPH_EDGE_LENGTH
+p: ADD_LEAVES_EDGE_LENGTH
+ 
+      The values of the parameters:
+data_folder: /mnt/z/tobias/data_point2tree/docker2
+N_TILES: 3
+SLICE_THICKNESS: 0.678
+FIND_STEMS_HEIGHT: 1.614
+FIND_STEMS_THICKNESS: 0.46
+GRAPH_MAXIMUM_CUMULATIVE_GAP: 6.826
+ADD_LEAVES_VOXEL_LENGTH: 0.159
+FIND_STEMS_MIN_POINTS: 84
+GRAPH_EDGE_LENGTH: 0.66
+ADD_LEAVES_EDGE_LENGTH: 1.115
+PYTHONPATH is not set. Setting it to the current directory
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/10_norm.segmented/*.ply
+Output folder: /mnt/z/tobias/data_point2tree/docker2/instance_segmented_point_clouds/10_norm.segmented/*
+INFO: Pandarallel will run on 24 workers.
+INFO: Pandarallel will use Memory file system to transfer data between the main process and workers.
+---- parameters ----
+tile                               /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/10_norm.segmented/*.ply
+odir                               /mnt/z/tobias/data_point2tree/docker2/instance_segmented_point_clouds/10_norm.segmented/*
+tindex                             /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/10_norm.segmented/tile_index.dat
+n_tiles                            3
+overlap                            False
+slice_thickness                    0.678
+find_stems_height                  1.614
+find_stems_thickness               0.46
+find_stems_min_radius              0.025
+find_stems_min_points              84
+graph_edge_length                  0.66
+graph_maximum_cumulative_gap       6.826
+min_points_per_tree                0
+add_leaves                         True
+add_leaves_voxel_length            0.159
+add_leaves_edge_length             1.115
+save_diameter_class                True
+ignore_missing_tiles               True
+pandarallel                        True
+verbose                            True
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/12_norm.segmented/*.ply
+Output folder: /mnt/z/tobias/data_point2tree/docker2/instance_segmented_point_clouds/12_norm.segmented/*
+INFO: Pandarallel will run on 24 workers.
+INFO: Pandarallel will use Memory file system to transfer data between the main process and workers.
+---- parameters ----
+tile                               /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/12_norm.segmented/*.ply
+odir                               /mnt/z/tobias/data_point2tree/docker2/instance_segmented_point_clouds/12_norm.segmented/*
+tindex                             /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/12_norm.segmented/tile_index.dat
+n_tiles                            3
+overlap                            False
+slice_thickness                    0.678
+find_stems_height                  1.614
+find_stems_thickness               0.46
+find_stems_min_radius              0.025
+find_stems_min_points              84
+graph_edge_length                  0.66
+graph_maximum_cumulative_gap       6.826
+min_points_per_tree                0
+add_leaves                         True
+add_leaves_voxel_length            0.159
+add_leaves_edge_length             1.115
+save_diameter_class                True
+ignore_missing_tiles               True
+pandarallel                        True
+verbose                            True
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/14_norm.segmented/*.ply
+Output folder: /mnt/z/tobias/data_point2tree/docker2/instance_segmented_point_clouds/14_norm.segmented/*
+INFO: Pandarallel will run on 24 workers.
+INFO: Pandarallel will use Memory file system to transfer data between the main process and workers.
+---- parameters ----
+tile                               /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/14_norm.segmented/*.ply
+odir                               /mnt/z/tobias/data_point2tree/docker2/instance_segmented_point_clouds/14_norm.segmented/*
+tindex                             /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/14_norm.segmented/tile_index.dat
+n_tiles                            3
+overlap                            False
+slice_thickness                    0.678
+find_stems_height                  1.614
+find_stems_thickness               0.46
+find_stems_min_radius              0.025
+find_stems_min_points              84
+graph_edge_length                  0.66
+graph_maximum_cumulative_gap       6.826
+min_points_per_tree                0
+add_leaves                         True
+add_leaves_voxel_length            0.159
+add_leaves_edge_length             1.115
+save_diameter_class                True
+ignore_missing_tiles               True
+pandarallel                        True
+verbose                            True
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/1_norm.segmented/*.ply
+Output folder: /mnt/z/tobias/data_point2tree/docker2/instance_segmented_point_clouds/1_norm.segmented/*
+INFO: Pandarallel will run on 24 workers.
+INFO: Pandarallel will use Memory file system to transfer data between the main process and workers.
+---- parameters ----
+tile                               /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/1_norm.segmented/*.ply
+odir                               /mnt/z/tobias/data_point2tree/docker2/instance_segmented_point_clouds/1_norm.segmented/*
+tindex                             /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/1_norm.segmented/tile_index.dat
+n_tiles                            3
+overlap                            False
+slice_thickness                    0.678
+find_stems_height                  1.614
+find_stems_thickness               0.46
+find_stems_min_radius              0.025
+find_stems_min_points              84
+graph_edge_length                  0.66
+graph_maximum_cumulative_gap       6.826
+min_points_per_tree                0
+add_leaves                         True
+add_leaves_voxel_length            0.159
+add_leaves_edge_length             1.115
+save_diameter_class                True
+ignore_missing_tiles               True
+pandarallel                        True
+verbose                            True
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/2_norm.segmented/*.ply
+Output folder: /mnt/z/tobias/data_point2tree/docker2/instance_segmented_point_clouds/2_norm.segmented/*
+INFO: Pandarallel will run on 24 workers.
+INFO: Pandarallel will use Memory file system to transfer data between the main process and workers.
+---- parameters ----
+tile                               /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/2_norm.segmented/*.ply
+odir                               /mnt/z/tobias/data_point2tree/docker2/instance_segmented_point_clouds/2_norm.segmented/*
+tindex                             /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/2_norm.segmented/tile_index.dat
+n_tiles                            3
+overlap                            False
+slice_thickness                    0.678
+find_stems_height                  1.614
+find_stems_thickness               0.46
+find_stems_min_radius              0.025
+find_stems_min_points              84
+graph_edge_length                  0.66
+graph_maximum_cumulative_gap       6.826
+min_points_per_tree                0
+add_leaves                         True
+add_leaves_voxel_length            0.159
+add_leaves_edge_length             1.115
+save_diameter_class                True
+ignore_missing_tiles               True
+pandarallel                        True
+verbose                            True
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm.segmented/*.ply
+Output folder: /mnt/z/tobias/data_point2tree/docker2/instance_segmented_point_clouds/4_norm.segmented/*
+INFO: Pandarallel will run on 24 workers.
+INFO: Pandarallel will use Memory file system to transfer data between the main process and workers.
+---- parameters ----
+tile                               /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm.segmented/*.ply
+odir                               /mnt/z/tobias/data_point2tree/docker2/instance_segmented_point_clouds/4_norm.segmented/*
+tindex                             /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm.segmented/tile_index.dat
+n_tiles                            3
+overlap                            False
+slice_thickness                    0.678
+find_stems_height                  1.614
+find_stems_thickness               0.46
+find_stems_min_radius              0.025
+find_stems_min_points              84
+graph_edge_length                  0.66
+graph_maximum_cumulative_gap       6.826
+min_points_per_tree                0
+add_leaves                         True
+add_leaves_voxel_length            0.159
+add_leaves_edge_length             1.115
+save_diameter_class                True
+ignore_missing_tiles               True
+pandarallel                        True
+verbose                            True
+Labeling instances in ply files and merging them afterwards
+Labeling instances in ply files and merging them afterwards
+Labeling instances in ply files and merging them afterwards
+Labeling instances in ply files and merging them afterwards
+Labeling instances in ply files and merging them afterwards
+Labeling instances in ply files and merging them afterwards
+Sem seg files: ['/mnt/z/tobias/data_point2tree/docker2/results/segmented_point_clouds/10_norm.segmented.las', '/mnt/z/tobias/data_point2tree/docker2/results/segmented_point_clouds/12_norm.segmented.las', '/mnt/z/tobias/data_point2tree/docker2/results/segmented_point_clouds/14_norm.segmented.las', '/mnt/z/tobias/data_point2tree/docker2/results/segmented_point_clouds/1_norm.segmented.las', '/mnt/z/tobias/data_point2tree/docker2/results/segmented_point_clouds/2_norm.segmented.las', '/mnt/z/tobias/data_point2tree/docker2/results/segmented_point_clouds/4_norm.segmented.las']
+Inst seg files: ['/mnt/z/tobias/data_point2tree/docker2/results/instance_segmented_point_clouds/10_norm.instance_segmented.las', '/mnt/z/tobias/data_point2tree/docker2/results/instance_segmented_point_clouds/12_norm.instance_segmented.las', '/mnt/z/tobias/data_point2tree/docker2/results/instance_segmented_point_clouds/14_norm.instance_segmented.las', '/mnt/z/tobias/data_point2tree/docker2/results/instance_segmented_point_clouds/1_norm.instance_segmented.las', '/mnt/z/tobias/data_point2tree/docker2/results/instance_segmented_point_clouds/2_norm.instance_segmented.las', '/mnt/z/tobias/data_point2tree/docker2/results/instance_segmented_point_clouds/4_norm.instance_segmented.las']
+Point format of instance segmentation: 3
+Header of instance segmentation: 1.2
+ 
+Done
+Results can be found here: /mnt/z/tobias/data_point2tree/docker2/results
+Results containing the input point clouds can be found here:  /mnt/z/tobias/data_point2tree/docker2/results/input_data
+Results containing the segmented point clouds can be found here:  /mnt/z/tobias/data_point2tree/docker2/results/segmented_point_clouds
+Results containing the instance segmented point clouds can be found here:  /mnt/z/tobias/data_point2tree/docker2/results/instance_segmented_point_clouds
+Results containing the instance segmented point clouds with ground can be found here:  /mnt/z/tobias/data_point2tree/docker2/results/instance_segmented_point_clouds_with_ground

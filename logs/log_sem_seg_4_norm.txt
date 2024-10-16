@@ -1,0 +1,1265 @@
+      The list of letters for the parameters:
+d: data_folder
+      The values of the parameters:
+data_folder: /mnt/z/tobias/data_point2tree/docker2
+remove_small_tiles: 0
+checkpoint_model_path: ./fsct/model/model.pth
+batch_size: 20
+tile_size: 10
+min_density: 75
+PYTHONPATH is not set. Setting it to the current directory
+1 las files found in the input folder good to go with!
+Searching for files in the input folder...
+Processing file /mnt/z/tobias/data_point2tree/docker2/4_norm.las
+Searching for files in the input folder...
+Tiling and tile index generation
+input folder:-----------------------------------------------------------------------
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/*.ply
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/000.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/000.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/000.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/000.las
+Subsampling...
+Original number of points: 5390148
+Slice size: 2718415     Slice number: 1 / 2
+Slice size: 5390148     Slice number: 2 / 2
+Subsampled number of points: 4774727
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/000_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 43.058640003204346 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/196
+20/196
+40/196
+60/196
+80/196
+100/196
+120/196
+140/196
+160/196
+180/196
+196/196
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/000_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/000_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 39.92751455307007 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/000_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/000_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.010225 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/000_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/000_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/000_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/000_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/000_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 11.614815711975098 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/000_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/001.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/001.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/001.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/001.las
+Subsampling...
+Original number of points: 9336539
+Slice size: 6763195     Slice number: 1 / 2
+Slice size: 9336539     Slice number: 2 / 2
+Subsampled number of points: 6033155
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/001_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 67.9866886138916 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/194
+20/194
+40/194
+60/194
+80/194
+100/194
+120/194
+140/194
+160/194
+180/194
+194/194
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/001_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/001_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 46.344096422195435 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/001_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/001_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.010962499999999998 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/001_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/001_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/001_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/001_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/001_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 14.507003784179688 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/001_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/002.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/002.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/002.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/002.las
+Subsampling...
+Original number of points: 870237
+Slice size: 746975     Slice number: 1 / 2
+Slice size: 870237     Slice number: 2 / 2
+Subsampled number of points: 924403
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/002_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 10.26658320426941 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/90
+20/90
+40/90
+60/90
+80/90
+90/90
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/002_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/002_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 12.262927293777466 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/002_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/002_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0047125 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/002_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/002_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/002_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/002_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/002_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 2.02333402633667 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/002_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/003.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/003.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/003.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/003.las
+Subsampling...
+Original number of points: 7172414
+Slice size: 5302657     Slice number: 1 / 2
+Slice size: 7172414     Slice number: 2 / 2
+Subsampled number of points: 3183076
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/003_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 425.0622580051422 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/191
+20/191
+40/191
+60/191
+80/191
+100/191
+120/191
+140/191
+160/191
+180/191
+191/191
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/003_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/003_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 30.056772708892822 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/003_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/003_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.010837499999999998 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/003_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/003_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/003_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/003_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/003_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 8.379166841506958 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/003_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/004.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/004.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/004.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/004.las
+Subsampling...
+Original number of points: 288980
+Slice size: 203433     Slice number: 1 / 2
+Slice size: 288980     Slice number: 2 / 2
+Subsampled number of points: 208219
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/004_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 5.095814943313599 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/46
+20/46
+40/46
+46/46
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/004_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/004_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 5.838592529296875 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/004_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/004_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0008999999999999993 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/004_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/004_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/004_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/004_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/004_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 0.5668771266937256 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/004_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/005.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/005.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/005.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/005.las
+Subsampling...
+Original number of points: 6182544
+Slice size: 1999740     Slice number: 1 / 2
+Slice size: 6182544     Slice number: 2 / 2
+Subsampled number of points: 4838279
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/005_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 45.21446943283081 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/172
+20/172
+40/172
+60/172
+80/172
+100/172
+120/172
+140/172
+160/172
+172/172
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/005_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/005_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 39.85451364517212 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/005_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/005_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.010375 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/005_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/005_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/005_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/005_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/005_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 11.595855474472046 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/005_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/006.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/006.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/006.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/006.las
+Subsampling...
+Original number of points: 3764222
+Slice size: 1470722     Slice number: 1 / 2
+Slice size: 3764222     Slice number: 2 / 2
+Subsampled number of points: 3213109
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/006_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 29.19490146636963 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/174
+20/174
+40/174
+60/174
+80/174
+100/174
+120/174
+140/174
+160/174
+174/174
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/006_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/006_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 30.649502277374268 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/006_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/006_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.010337500000000001 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/006_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/006_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/006_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/006_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/006_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 7.229982852935791 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/006_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/007.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/007.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/007.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/007.las
+Subsampling...
+Original number of points: 337090
+Slice size: 190950     Slice number: 1 / 2
+Slice size: 337090     Slice number: 2 / 2
+Subsampled number of points: 283533
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/007_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 5.496586084365845 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/40
+20/40
+40/40
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/007_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/007_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 6.1868791580200195 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/007_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/007_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0008625 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/007_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/007_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/007_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/007_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/007_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 0.7708573341369629 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/007_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/008.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/008.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/008.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/008.las
+Subsampling...
+Original number of points: 1878114
+Slice size: 1028478     Slice number: 1 / 2
+Slice size: 1878114     Slice number: 2 / 2
+Subsampled number of points: 1570587
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/008_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 16.146405458450317 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/87
+20/87
+40/87
+60/87
+80/87
+87/87
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/008_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/008_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 15.840655088424683 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/008_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/008_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.004987499999999999 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/008_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/008_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/008_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/008_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/008_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 3.5888915061950684 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/008_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/009.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/009.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/009.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/009.las
+Subsampling...
+Original number of points: 3403526
+Slice size: 1228127     Slice number: 1 / 2
+Slice size: 3403526     Slice number: 2 / 2
+Subsampled number of points: 2180823
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/009_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 23.036609411239624 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/172
+20/172
+40/172
+60/172
+80/172
+100/172
+120/172
+140/172
+160/172
+172/172
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/009_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/009_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 24.37737226486206 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/009_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/009_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.009825 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/009_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/009_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/009_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/009_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/009_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 5.419509649276733 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/009_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/010.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/010.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/010.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/010.las
+Subsampling...
+Original number of points: 6336362
+Slice size: 2687679     Slice number: 1 / 2
+Slice size: 6336362     Slice number: 2 / 2
+Subsampled number of points: 5773313
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/010_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 50.765923500061035 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/193
+20/193
+40/193
+60/193
+80/193
+100/193
+120/193
+140/193
+160/193
+180/193
+193/193
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/010_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/010_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 46.52826976776123 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/010_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/010_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.01 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/010_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/010_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/010_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/010_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/010_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 13.507523775100708 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/010_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/011.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/011.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/011.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/011.las
+Subsampling...
+Original number of points: 86136
+Slice size: 35022     Slice number: 1 / 2
+Slice size: 86136     Slice number: 2 / 2
+Subsampled number of points: 110954
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/011_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 3.998448133468628 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/28
+20/28
+28/28
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/011_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/011_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 4.5445756912231445 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/011_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/012.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/012.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/012.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/012.las
+Subsampling...
+Original number of points: 4366174
+Slice size: 1009735     Slice number: 1 / 2
+Slice size: 4366174     Slice number: 2 / 2
+Subsampled number of points: 3064211
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/012_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 31.29067635536194 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/131
+20/131
+40/131
+60/131
+80/131
+100/131
+120/131
+131/131
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/012_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/012_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 26.11917233467102 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/012_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/012_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0098 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/012_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/012_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/012_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/012_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/012_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 7.644575357437134 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/012_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/013.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/013.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/013.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/013.las
+Subsampling...
+Original number of points: 5734244
+Slice size: 2286899     Slice number: 1 / 2
+Slice size: 5734244     Slice number: 2 / 2
+Subsampled number of points: 3089547
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/013_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 36.725186347961426 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/55
+20/55
+40/55
+55/55
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/013_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/013_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 22.12722659111023 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/013_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/013_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.005475 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/013_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/013_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/013_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/013_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/013_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 7.085366725921631 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/013_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/014.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/014.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/014.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/014.las
+Subsampling...
+Original number of points: 10402903
+Slice size: 4633557     Slice number: 1 / 2
+Slice size: 10402903     Slice number: 2 / 2
+Subsampled number of points: 8012903
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/014_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 81.82511448860168 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/136
+20/136
+40/136
+60/136
+80/136
+100/136
+120/136
+136/136
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/014_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/014_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 53.66864347457886 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/014_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/014_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0098875 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/014_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/014_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/014_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/014_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/014_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 18.13748598098755 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/014_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/015.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/015.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/015.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/015.las
+Subsampling...
+Original number of points: 7332917
+Slice size: 5358645     Slice number: 1 / 2
+Slice size: 7332917     Slice number: 2 / 2
+Subsampled number of points: 6500327
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/015_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 60.63069033622742 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/170
+20/170
+40/170
+60/170
+80/170
+100/170
+120/170
+140/170
+160/170
+170/170
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/015_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/015_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 48.0578088760376 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/015_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/015_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0100625 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/015_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/015_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/015_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/015_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/015_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 45.17179274559021 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/015_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/016.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/016.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/016.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/016.las
+Subsampling...
+Original number of points: 451193
+Slice size: 284029     Slice number: 1 / 2
+Slice size: 451193     Slice number: 2 / 2
+Subsampled number of points: 531302
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/016_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 6.8640594482421875 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/22
+20/22
+22/22
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/016_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/016_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 6.698524713516235 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/016_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/016_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0007624999999999999 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/016_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/016_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/016_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/016_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/016_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 1.4895358085632324 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/016_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/017.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/017.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/017.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/017.las
+Subsampling...
+Original number of points: 826845
+Slice size: 178695     Slice number: 1 / 2
+Slice size: 826845     Slice number: 2 / 2
+Subsampled number of points: 722123
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/017_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 9.037371158599854 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/169
+20/169
+40/169
+60/169
+80/169
+100/169
+120/169
+140/169
+160/169
+169/169
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/017_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/017_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 14.661072254180908 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/017_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/017_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.010375 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/017_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/017_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/017_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/017_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/017_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 1.5842163562774658 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/017_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/018.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/018.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/018.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/018.las
+Subsampling...
+Original number of points: 1050861
+Slice size: 410953     Slice number: 1 / 2
+Slice size: 1050861     Slice number: 2 / 2
+Subsampled number of points: 1165470
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/018_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 11.470503330230713 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/153
+20/153
+40/153
+60/153
+80/153
+100/153
+120/153
+140/153
+153/153
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/018_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/018_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 16.6512610912323 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/018_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/018_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.008675 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/018_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/018_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/018_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/018_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/018_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 2.6195271015167236 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/018_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/019.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/019.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/019.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/019.las
+Subsampling...
+Original number of points: 1405047
+Slice size: 1184522     Slice number: 1 / 2
+Slice size: 1405047     Slice number: 2 / 2
+Subsampled number of points: 1617496
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/019_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 15.068064212799072 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/106
+20/106
+40/106
+60/106
+80/106
+100/106
+106/106
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/019_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/019_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 17.55435800552368 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/019_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+    DTM Done
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/019_FSCT_output/DTM.las
+Saved.
+Plot area is approximately 0.0048375 ha
+Getting heights above DTM...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/019_FSCT_output/terrain_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/019_FSCT_output/stem_points.las
+Saved.
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/019_FSCT_output/vegetation_points.las
+Saved.
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/019_FSCT_output/cwd_points.las is empty...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/019_FSCT_output/segmented_cleaned.las
+Saved.
+Post-processing took 3.6438779830932617 seconds
+Post processing done.
+Copying results to output directory.
+--------------------------------------------------------------------------------------------
+Copying /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/019_FSCT_output/segmented_cleaned.las to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/segmented_cleaned.las
+Doing reduction.
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/020.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/020.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/020.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/020.las
+Subsampling...
+Original number of points: 7898
+Slice size: 2106     Slice number: 1 / 2
+Slice size: 7898     Slice number: 2 / 2
+Subsampled number of points: 9127
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/020_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 3.197256326675415 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/12
+12/12
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/020_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/020_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 2.9922304153442383 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/020_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+Processing /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/021.ply file...
+Converting point cloud to las format.
+____________________________________________________________________________
+/mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/021.las
+Using model: ./fsct/model/model.pth
+Current point cloud being processed:  /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/021.las
+Using default number of CPU cores (all of them).
+Processing using  48 / 48  CPU cores.
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/021.las
+Subsampling...
+Original number of points: 40227
+Slice size: 22042     Slice number: 1 / 2
+Slice size: 40227     Slice number: 2 / 2
+Subsampled number of points: 51755
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/021_FSCT_output/working_point_cloud.las
+Saved.
+Pre-processing point cloud...
+Preprocessing took 3.802456855773926 s
+Preprocessing done
+
+Is CUDA available? True
+Performing inference on device: cuda
+0/22
+20/22
+22/22
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/021_FSCT_output/working_point_cloud.las
+Choosing most confident labels...
+Saving file: /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/021_FSCT_output/segmented.las
+Saved.
+Semantic segmentation took 3.756199359893799 s
+Semantic segmentation done
+Loading segmented point cloud...
+Loading file... /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm/021_FSCT_output/segmented.las
+Processing point cloud...
+Making DTM...
+Merging the segmented point clouds
+Only merging the ply files
+Renaming /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm to /mnt/z/tobias/data_point2tree/docker2/segmented_point_clouds/tiled/4_norm
+Semantic segmentation done.
